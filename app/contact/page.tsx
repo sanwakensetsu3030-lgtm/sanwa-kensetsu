@@ -24,12 +24,44 @@ export default function ContactPage() {
 
       <section style={{ backgroundColor: STRAW }} className="py-10">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-          {[["現場監督", "募集中"], ["作業員", "募集中"], ["未経験者", "歓迎"]].map(([title, sub]) => (
+          {[["現場係員", "（現場監督補助）募集中"], ["月給", "225,000円〜400,000円"], ["未経験者", "歓迎・年齢不問"]].map(([title, sub]) => (
             <div key={title}>
               <p style={{ color: GREEN }} className="text-2xl font-black">{title}</p>
               <p style={{ color: GREEN }} className="text-sm font-bold mt-1 opacity-70">{sub}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="py-16" style={{ backgroundColor: "#fafaf7" }}>
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="section-subtitle">Recruit</p>
+          <h2 className="section-title">採用情報</h2>
+          <p className="text-gray-500 mt-2 mb-10">北区の道路・公園・河川を守る仲間を募集しています。未経験者歓迎・年齢不問。</p>
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+            {[
+              { label: "職種", value: "現場係員（現場監督補助）" },
+              { label: "仕事内容", value: "主に北区内の公共事業を請負って土木工事を行います。現場監督補助として活躍していただきます。" },
+              { label: "雇用形態", value: "正社員（正社員登用あり・過去3年間実績あり）" },
+              { label: "月給", value: "225,000円〜400,000円（基本給145,000円〜170,000円）" },
+              { label: "各種手当", value: "物価手当42,000円〜90,000円 / 住宅手当20,000円〜50,000円 / 職務手当18,000円〜30,000円 / 現場・管理手当0円〜45,000円" },
+              { label: "資格手当", value: "土木施工管理技士2級：7,000円 / 1級：15,000円" },
+              { label: "昇給・賞与", value: "昇給あり（前年度実績あり）/ 賞与年2回・計2.5ヶ月分（前年度実績）" },
+              { label: "通勤手当", value: "実費支給（上限あり・月額30,000円）" },
+              { label: "勤務地", value: "東京都北区堀船3丁目43番1号（都電荒川線 梶原駅 徒歩5分）" },
+              { label: "試用期間", value: "3ヶ月（試用期間中の条件は同条件）" },
+              { label: "必要資格", value: "普通自動車運転免許（必須）" },
+              { label: "学歴", value: "高校卒業以上" },
+              { label: "必要経験", value: "不問（未経験者歓迎）" },
+              { label: "資格取得支援", value: "土木施工管理技士2級・1級の取得を希望する場合、会社が支援します" },
+              { label: "職場環境", value: "アットホームな社風で休暇も取り易いです" },
+            ].map((item, i) => (
+              <div key={item.label} className={`grid grid-cols-3 py-4 px-6 gap-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                <dt style={{ color: GREEN }} className="text-sm font-bold col-span-1">{item.label}</dt>
+                <dd className="text-sm text-gray-600 col-span-2">{item.value}</dd>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
