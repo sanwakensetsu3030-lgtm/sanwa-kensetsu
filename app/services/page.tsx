@@ -50,8 +50,6 @@ const achievements = [
   { area: "東京都北区", type: "補助87号線街路築造工事・交差点改良工事", scale: "2021.05〜2022.10" },
   { area: "東京都北区", type: "西が丘小学校新築グラウンド整備工事", scale: "2021.11〜2023.02" },
   { area: "東京都北区", type: "石神井川堆積土搬出工事", scale: "2022.11〜2023.03" },
-  { area: "東京都北区", type: "路面補修等工事・汚水桝等調整工事（北1293号）", scale: "現在施工中" },
-  { area: "東京都北区", type: "道路維持緊急工事・汚水桝等調整工事外2件（単価契約分）", scale: "現在施工中" },
 ];
 
 export default function ServicesPage() {
@@ -152,7 +150,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto px-4">
           <p className="section-subtitle">Works</p>
           <h2 className="section-title">施工実績</h2>
-          <p className="text-gray-500 mt-2 mb-10 max-w-xl">※実績は一部を掲載しています。詳細はお問い合わせください。</p>
+          <p className="text-gray-500 mt-2 mb-10 max-w-xl">※完了した実績の一部を掲載しています。詳細はお問い合わせください。</p>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm bg-white rounded-xl overflow-hidden shadow-sm">
