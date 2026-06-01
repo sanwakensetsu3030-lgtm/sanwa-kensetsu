@@ -11,7 +11,6 @@ const navLinks = [
   { href: "/", label: "ホーム" },
   { href: "/about", label: "会社概要" },
   { href: "/services", label: "事業内容・実績" },
-  { href: "/contact", label: "お問い合わせ" },
 ];
 
 export default function Header() {
@@ -35,7 +34,7 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          {/* 採用情報ボタン — 常時表示 */}
+          {/* お問い合わせ・採用情報ボタン — 常時表示 */}
           <Link
             href="/contact"
             className="text-sm font-bold rounded transition-colors duration-200"
@@ -46,7 +45,7 @@ export default function Header() {
               display: "inline-block",
             }}
           >
-            採用情報
+            お問い合わせ・採用情報
           </Link>
         </nav>
 
@@ -84,7 +83,7 @@ export default function Header() {
             style={{ backgroundColor: STRAW, color: GREEN_DARK, padding: "0.75rem" }}
             onClick={() => setMenuOpen(false)}
           >
-            採用情報
+            お問い合わせ・採用情報
           </Link>
         </div>
       )}

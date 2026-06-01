@@ -84,12 +84,12 @@ export default function AboutPage() {
       <section className="py-20" style={{ backgroundColor: "#fafaf7" }}>
         <div className="max-w-6xl mx-auto px-4">
           <p className="section-subtitle">Team & Culture</p>
-          <h2 className="section-title">家族のようなチームです。</h2>
+          <h2 className="section-title">人とのつながりを、大切にする会社です。</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: "🤝", title: "アットホームな職場", desc: "もともと友人同士だったり、友人の家族だったりというつながりで集まったメンバーが多く、家族のような絆があります。" },
-              { icon: "👶", title: "地域に愛される現場", desc: "地域の子どもたちから「頑張れ！」と声をかけてもらったり、機械や作業について質問されることも。みんな優しく答えています。" },
-              { icon: "🏆", title: "誇りある仕事", desc: "道路維持管理から災害緊急対応まで。地域に頼りにされ、かっこよく働ける仕事環境を大切にしています。" },
+              { icon: "🗣️", title: "風通しの良い職場環境", desc: "事務所では社長を含む全員が同じ空間で日々の業務にあたっており、気軽に意見を交わせる開かれた雰囲気があります。上下の距離が近いからこそ、働きやすさにつながっています。" },
+              { icon: "👨‍👩‍👧", title: "社員とその家族を大切に", desc: "社長は社員本人だけでなく、その家族やお子さんのことにも気を配り、折に触れて声をかけています。「社員が安心して働ける環境をつくること」が、会社の根底にある考え方です。" },
+              { icon: "🤝", title: "縁でつながるチーム", desc: "長年勤める社員の紹介や、仲間の友人、そのお子さんなど、何かしらの縁でつながったメンバーが多く在籍しています。人と人のつながりを大切にしてきた積み重ねが、今の三和建設を形づくっています。" },
             ].map((c) => (
               <div key={c.title} className="bg-white rounded-xl p-8 shadow-sm" style={{ borderTop: `4px solid ${STRAW}` }}>
                 <p className="text-3xl mb-4">{c.icon}</p>
