@@ -76,8 +76,8 @@ export default function ContactPage() {
                 <p>東京都北区堀船3丁目43番1号</p>
               </div>
               <div>
-                <p style={{ color: GREEN }} className="font-bold mb-1">創業</p>
-                <p>昭和27年（1952年）</p>
+                <p style={{ color: GREEN }} className="font-bold mb-1">設立</p>
+                <p>昭和27年（1952年）3月24日</p>
               </div>
               <div>
                 <p style={{ color: GREEN }} className="font-bold mb-1">営業時間</p>
@@ -141,8 +141,7 @@ export default function ContactPage() {
                   className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none transition-colors text-gray-700"
                 >
                   <option value="">選択してください</option>
-                  <option value="work">工事・業務のご相談</option>
-                  <option value="recruit-supervisor">採用について（現場監督）</option>
+                  <option value="recruit-supervisor">採用について（現場監督・現場係員）</option>
                   <option value="recruit-worker">採用について（作業員）</option>
                   <option value="other">その他</option>
                 </select>

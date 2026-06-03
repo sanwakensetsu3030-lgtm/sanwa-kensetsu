@@ -16,7 +16,7 @@ const services = [
   },
   {
     icon: "🌳",
-    title: "公園・河川・学校グラウンド工事",
+    title: "公園・河川・下水道整備・学校グラウンド工事",
     tag: "インフラ整備",
     desc: "地域の公園整備、河川護岸工事、学校グラウンドの整備まで。人々が安心して暮らし、子どもたちが安全に活動できる環境づくりを担っています。",
   },
@@ -29,7 +29,7 @@ const services = [
 ];
 
 const strengths = [
-  { num: "1952年", label: "（昭和27年）創業" },
+  { num: "1952年", label: "（昭和27年）設立" },
   { num: "70年以上", label: "の地域実績" },
   { num: "北区", label: "地域密着" },
 ];
@@ -55,7 +55,7 @@ export default function Home() {
             <span style={{ color: STRAW }}>守り続ける仕事。</span>
           </h1>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 max-w-2xl">
-            三和建設株式会社は、<strong className="text-white">昭和27年（1952年）に創業</strong>し、
+            三和建設株式会社は、<strong className="text-white">昭和27年（1952年）に設立</strong>し、
             70年以上にわたって東京都北区の道路・公園・河川を守り続けてきた地域密着型ゼネコンです。
           </p>
           <p className="text-gray-400 text-base leading-relaxed mb-10 max-w-xl">

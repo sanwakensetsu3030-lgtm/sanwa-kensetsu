@@ -15,7 +15,7 @@ const companyInfo = [
   { label: "設立", value: "昭和27年（1952年）3月24日" },
   { label: "資本金", value: "2,000万円" },
   { label: "所在地", value: "〒114-0004 東京都北区堀船3丁目43番1号" },
-  { label: "建設業許可", value: "東京都知事（般・特 2）第19372号" },
+  { label: "建設業許可", value: "東京都知事（般・特 2）第19372号（令和7年11月15日 更新）" },
   { label: "許可業種", value: "造園工事業（般）／土木工事業・とび土工工事業・舗装工事業・しゅんせつ工事業・水道施設工事業（特）" },
   { label: "事業内容", value: "道路維持管理・補修工事、公園整備工事、河川工事、土木一式工事、災害緊急対応（土木緊急工作隊）" },
   { label: "主な発注者", value: "東京都北区・東京都第六建設事務所・東京都財務局" },
@@ -29,13 +29,13 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4">
           <p style={{ color: "#A89840" }} className="font-bold tracking-widest text-sm mb-3 uppercase">About Us</p>
           <h1 style={{ color: GREEN }} className="text-4xl md:text-5xl font-black">会社概要</h1>
-          <p style={{ color: GREEN }} className="mt-3 text-sm opacity-60">創業 昭和27年（1952年） / 東京都北区地域密着</p>
+          <p style={{ color: GREEN }} className="mt-3 text-sm opacity-60">設立 昭和27年（1952年） / 東京都北区地域密着</p>
         </div>
       </section>
 
       <section style={{ backgroundColor: STRAW }} className="py-16">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-6 text-center">
-          {[["1952", "年 創業"], ["70+", "年の実績"], ["北区", "地域密着"]].map(([num, label]) => (
+          {[["1952", "年 設立"], ["70+", "年の実績"], ["北区", "地域密着"]].map(([num, label]) => (
             <div key={label}>
               <p style={{ color: GREEN }} className="text-4xl font-black">{num}</p>
               <p style={{ color: GREEN }} className="text-sm font-bold mt-1 opacity-70">{label}</p>

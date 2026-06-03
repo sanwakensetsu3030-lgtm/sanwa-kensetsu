@@ -21,10 +21,10 @@ const services = [
   },
   {
     icon: "🌳",
-    title: "公園・河川・学校グラウンド工事",
+    title: "公園・河川・下水道整備・学校グラウンド工事",
     tag: "インフラ整備",
-    desc: "地域住民が安心して利用できる公園の整備・改修、河川護岸工事、学校グラウンドの整備まで幅広く対応しています。子どもたちが安全に活動できる環境づくりも担っています。",
-    items: ["公園施設整備・改修", "学校グラウンド整備", "河川護岸補修工事", "園路・広場の舗装工事"],
+    desc: "地域住民が安心して利用できる公園の整備・改修、河川護岸工事、下水道整備、学校グラウンドの整備まで幅広く対応しています。子どもたちが安全に活動できる環境づくりも担っています。",
+    items: ["公園施設整備・改修", "学校グラウンド整備", "河川護岸補修工事", "下水道・汚水桝等整備"],
     main: false,
   },
   {
@@ -50,6 +50,10 @@ const achievements = [
   { area: "東京都北区", type: "補助87号線街路築造工事・交差点改良工事", scale: "2021.05〜2022.10" },
   { area: "東京都北区", type: "西が丘小学校新築グラウンド整備工事", scale: "2021.11〜2023.02" },
   { area: "東京都北区", type: "石神井川堆積土搬出工事", scale: "2022.11〜2023.03" },
+  { area: "東京都北区", type: "路面補修等工事・汚水桝等調整工事（北1293号）", scale: "2023.07〜2024.03" },
+  { area: "東京都北区", type: "路面補修等工事・汚水桝等調整工事（北1293号：山工区）", scale: "2024.06〜2025.03" },
+  { area: "東京都北区", type: "王子一丁目遊び場撤去工事", scale: "2024.10〜2024.12" },
+  { area: "東京都北区", type: "路面補修等工事・汚水桝等調整工事（北1293号：皿工区）", scale: "2025.07〜2025.11" },
 ];
 
 export default function ServicesPage() {
@@ -176,17 +180,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section style={{ backgroundColor: GREEN }} className="py-16 text-center text-white">
-        <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-2xl font-black mb-4">工事のご相談・お見積もりはお気軽に</h2>
-          <p className="mb-8 text-sm leading-relaxed text-gray-300">
-            道路・公園・河川に関する工事のご相談を承っています。まずはお気軽にお問い合わせください。
-          </p>
-          <Link href="/contact" className="btn-straw">
-            お問い合わせはこちら
-          </Link>
-        </div>
-      </section>
     </>
   );
 }
