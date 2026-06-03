@@ -152,7 +152,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { src: "/typhoon19-suibo.jpg", alt: "台風19号に伴う水防作業", label: "緊急対応：台風19号 水防作業" },
+              { src: "/typhoon19-suibo.jpg", alt: "台風19号に伴う水防作業", label: "台風19号 水防作業" },
               { src: "/arakawa-cleanup1.jpg", alt: "荒川河川敷清掃作業", label: "荒川河川敷 清掃作業" },
               { src: "/arakawa-cleanup2.jpg", alt: "荒川河川敷清掃作業", label: "荒川河川敷 清掃作業" },
             ].map((photo) => (

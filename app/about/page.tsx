@@ -101,6 +101,29 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="py-20" style={{ backgroundColor: "#fafaf7" }}>
+        <div className="max-w-6xl mx-auto px-4">
+          <p className="section-subtitle">Welfare</p>
+          <h2 className="section-title">福利厚生</h2>
+          <p className="text-gray-500 mt-2 mb-10">社員の生活を大切にし、仕事以外での交流も積極的に行っています。</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { src: "/dogashima.jpg", alt: "社員旅行 堂ヶ島", label: "社員旅行", sub: "堂ヶ島（静岡県）" },
+              { src: "/tomioka.jpg", alt: "社員旅行 富岡製糸場", label: "社員旅行", sub: "富岡製糸場（群馬県）" },
+              { src: "/bbq.jpg", alt: "社員バーベキュー", label: "社員交流", sub: "バーベキュー" },
+            ].map((photo) => (
+              <div key={photo.src} className="rounded-2xl overflow-hidden shadow-sm bg-white" style={{ border: `2px solid ${STRAW}` }}>
+                <img src={photo.src} alt={photo.alt} className="w-full object-cover" style={{ height: "220px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">{photo.label}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{photo.sub}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <p className="section-subtitle">Company Profile</p>
