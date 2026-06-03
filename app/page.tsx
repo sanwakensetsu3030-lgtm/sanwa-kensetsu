@@ -200,13 +200,19 @@ export default function Home() {
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 以前、「どうしてもショベルカーが動いているところを見たい」と泣いているお子さんに困っているお母さんがいました。昼休みにもかかわらず、作業員が重機を動かして見せてあげました。
               </p>
-              <div className="rounded-xl p-4 text-sm" style={{ backgroundColor: CREAM }}>
+              <div className="rounded-xl p-4 text-sm mb-4" style={{ backgroundColor: CREAM }}>
                 <p style={{ color: GREEN }} className="font-bold mb-1">後日、届いたもの</p>
                 <ul className="text-gray-600 space-y-1">
                   <li>📩 親御さんからの感謝のお手紙</li>
                   <li>🎨 お子さんが描いてくれた似顔絵</li>
                 </ul>
               </div>
+              <img
+                src="/kodomo-e.jpg"
+                alt="お子さんが描いてくれた似顔絵"
+                className="w-full rounded-xl"
+                style={{ border: `2px solid ${STRAW}` }}
+              />
             </div>
           </div>
 
