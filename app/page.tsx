@@ -196,14 +196,13 @@ export default function Home() {
                 <p style={{ color: "#A89840" }} className="font-bold text-xs tracking-widest mb-3 uppercase">Voice from Community</p>
                 <div className="space-y-3">
                   {[
-                    "毎日この道を通っています。いつもきれいに整備してくれてありがとう。",
-                    "工事中も丁寧に誘導してくれて、子どもが安心して通れました。",
-                    "雨の日も休まず作業してくれる姿に、頭が下がります。",
+                    { emoji: "🏠", text: "自宅の前の段差に悩んでいたのですが、きれいにしていただいてとても助かりました。" },
+                    { emoji: "🚸", text: "子どもの通学路に防護柵をつけていただいて、ありがとうございます。安心して通れるようになりました。" },
+                    { emoji: "🚒", text: "災害時に真っ先に駆けつけてくれてありがとうございます。" },
                   ].map((voice, i) => (
-                    <div key={i} className="flex gap-2 items-start">
-                      <span style={{ color: STRAW }} className="font-bold mt-0.5 flex-shrink-0">「</span>
-                      <p style={{ color: "#4b5563" }} className="leading-relaxed">{voice}</p>
-                      <span style={{ color: STRAW }} className="font-bold mt-0.5 flex-shrink-0">」</span>
+                    <div key={i} className="flex gap-3 items-start">
+                      <span className="text-xl flex-shrink-0">{voice.emoji}</span>
+                      <p style={{ color: "#4b5563" }} className="leading-relaxed text-sm">{voice.text}</p>
                     </div>
                   ))}
                 </div>
