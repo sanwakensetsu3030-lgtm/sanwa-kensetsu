@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/", label: "ホーム" },
   { href: "/about", label: "会社概要" },
   { href: "/services", label: "事業内容・実績" },
+  { href: "/access", label: "アクセス" },
 ];
 
 export default function Header() {
@@ -84,6 +85,14 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
           >
             お問い合わせ・採用情報
+          </Link>
+          <Link
+            href="/access"
+            className="block mt-2 text-white py-3 border-b text-sm font-medium hover:opacity-80"
+            style={{ borderColor: "#3D8A55" }}
+            onClick={() => setMenuOpen(false)}
+          >
+            アクセス
           </Link>
         </div>
       )}

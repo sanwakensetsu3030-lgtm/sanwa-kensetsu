@@ -16,9 +16,6 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-4">
           <p style={{ color: "#A89840" }} className="font-bold tracking-widest text-sm mb-3 uppercase">Contact & Recruit</p>
           <h1 style={{ color: GREEN }} className="text-4xl md:text-5xl font-black">お問い合わせ・採用情報</h1>
-          <p style={{ color: GREEN }} className="mt-4 max-w-xl opacity-70">
-            工事のご相談、採用に関するご質問など、お気軽にお問い合わせください。
-          </p>
         </div>
       </section>
 
@@ -77,7 +74,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p style={{ color: GREEN }} className="font-bold mb-1">設立</p>
-                <p>昭和27年（1952年）3月24日</p>
+                <p>昭和27年3月24日（1952年）</p>
               </div>
               <div>
                 <p style={{ color: GREEN }} className="font-bold mb-1">営業時間</p>

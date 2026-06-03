@@ -154,7 +154,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto px-4">
           <p className="section-subtitle">Works</p>
           <h2 className="section-title">施工実績</h2>
-          <p className="text-gray-500 mt-2 mb-10 max-w-xl">※完了した実績の一部を掲載しています。詳細はお問い合わせください。</p>
+          <div className="mb-10"></div>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm bg-white rounded-xl overflow-hidden shadow-sm">
@@ -176,7 +176,6 @@ export default function ServicesPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-gray-400 text-xs mt-4">※ 実績写真・詳細資料はお問い合わせ後にご提供いたします。</p>
         </div>
       </section>
 

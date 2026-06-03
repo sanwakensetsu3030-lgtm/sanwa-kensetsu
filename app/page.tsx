@@ -189,9 +189,25 @@ export default function Home() {
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 現場では、地域の子どもたちから「ありがとう」と声をかけてもらうことがあります。子どもたちだけでなく、地域の方から感謝のお手紙をいただくこともあります。
               </p>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed mb-6">
                 こうした地域からの感謝は、私たちの大きな力になります。日々の仕事への誇りと、もっと良い街をつくりたいという気持ちの源です。
               </p>
+              <div className="rounded-xl p-5 text-sm" style={{ backgroundColor: CREAM }}>
+                <p style={{ color: "#A89840" }} className="font-bold text-xs tracking-widest mb-3 uppercase">Voice from Community</p>
+                <div className="space-y-3">
+                  {[
+                    "毎日この道を通っています。いつもきれいに整備してくれてありがとう。",
+                    "工事中も丁寧に誘導してくれて、子どもが安心して通れました。",
+                    "雨の日も休まず作業してくれる姿に、頭が下がります。",
+                  ].map((voice, i) => (
+                    <div key={i} className="flex gap-2 items-start">
+                      <span style={{ color: STRAW }} className="font-bold mt-0.5 flex-shrink-0">「</span>
+                      <p style={{ color: "#4b5563" }} className="leading-relaxed">{voice}</p>
+                      <span style={{ color: STRAW }} className="font-bold mt-0.5 flex-shrink-0">」</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm" style={{ borderTop: `4px solid ${STRAW}` }}>

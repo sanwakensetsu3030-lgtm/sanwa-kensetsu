@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <p style={{ color: "#C8BA6A" }} className="font-black text-lg mb-1">三和建設株式会社</p>
           <p className="text-gray-400 text-xs tracking-widest mb-1">SANWA KENSETSU CO., LTD.</p>
-          <p className="text-gray-500 text-xs mb-4">創業 昭和27年（1952年）</p>
+          <p className="text-gray-500 text-xs mb-4">昭和27年設立（1952年）</p>
           <p className="text-gray-300 text-sm leading-relaxed">
             東京都北区地域密着70年以上。<br />
             道路・公園・河川を守り、地域の安心・安全な暮らしを支えています。
@@ -21,6 +21,7 @@ export default function Footer() {
             <li><Link href="/about" className="hover:text-white transition-colors">会社概要</Link></li>
             <li><Link href="/services" className="hover:text-white transition-colors">事業内容・施工実績</Link></li>
             <li><Link href="/contact" className="hover:text-white transition-colors">お問い合わせ・採用</Link></li>
+            <li><Link href="/access" className="hover:text-white transition-colors">アクセス</Link></li>
           </ul>
         </div>
 
