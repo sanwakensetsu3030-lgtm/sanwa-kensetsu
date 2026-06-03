@@ -121,29 +121,46 @@ export default function ServicesPage() {
       </section>
 
       <section style={{ backgroundColor: STRAW }} className="py-20">
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <p style={{ color: GREEN }} className="font-bold tracking-widest text-xs mb-4 uppercase opacity-70">Emergency Response</p>
-            <h2 style={{ color: GREEN }} className="text-3xl font-black leading-tight mb-6">
-              土木緊急工作隊として、<br />災害の最前線へ。
-            </h2>
-            <p style={{ color: GREEN }} className="leading-relaxed mb-4 opacity-80">
-              私たちは「土木緊急工作隊」に所属しています。台風・大雪・大雨などの自然災害が発生した際に、消防や自衛隊とともに危険なエリアの最前線で活動します。
-            </p>
-            <p style={{ color: GREEN }} className="text-sm leading-relaxed opacity-70">
-              土木建設業者も、災害時に地域を守る重要な力です。日常のインフラ管理で培った技術と経験を、いざというときに地域のために活かしています。
-            </p>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-14">
+            <div>
+              <p style={{ color: GREEN }} className="font-bold tracking-widest text-xs mb-4 uppercase opacity-70">Emergency Response</p>
+              <h2 style={{ color: GREEN }} className="text-3xl font-black leading-tight mb-6">
+                土木緊急工作隊として、<br />災害の最前線へ。
+              </h2>
+              <p style={{ color: GREEN }} className="leading-relaxed mb-4 opacity-80">
+                私たちは「土木緊急工作隊」に所属しています。台風・大雪・大雨などの自然災害が発生した際に、消防や自衛隊とともに危険なエリアの最前線で活動します。
+              </p>
+              <p style={{ color: GREEN }} className="text-sm leading-relaxed opacity-70">
+                土木建設業者も、災害時に地域を守る重要な力です。日常のインフラ管理で培った技術と経験を、いざというときに地域のために活かしています。
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { icon: "🌀", label: "台風対応" },
+                { icon: "❄️", label: "大雪対応" },
+                { icon: "🌧️", label: "大雨・洪水対応" },
+                { icon: "🚧", label: "緊急道路補修" },
+              ].map((item) => (
+                <div key={item.label} className="bg-white rounded-xl p-6 text-center shadow-sm">
+                  <p className="text-3xl mb-2">{item.icon}</p>
+                  <p style={{ color: GREEN }} className="font-bold text-sm">{item.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: "🌀", label: "台風対応" },
-              { icon: "❄️", label: "大雪対応" },
-              { icon: "🌧️", label: "大雨・洪水対応" },
-              { icon: "🚧", label: "緊急道路補修" },
-            ].map((item) => (
-              <div key={item.label} className="bg-white rounded-xl p-6 text-center shadow-sm">
-                <p className="text-3xl mb-2">{item.icon}</p>
-                <p style={{ color: GREEN }} className="font-bold text-sm">{item.label}</p>
+              { src: "/typhoon19-suibo.jpg", alt: "台風19号に伴う水防作業", label: "緊急対応：台風19号 水防作業" },
+              { src: "/arakawa-cleanup1.jpg", alt: "荒川河川敷清掃作業", label: "荒川河川敷 清掃作業" },
+              { src: "/arakawa-cleanup2.jpg", alt: "荒川河川敷清掃作業", label: "荒川河川敷 清掃作業" },
+            ].map((photo) => (
+              <div key={photo.src} className="rounded-2xl overflow-hidden shadow-sm bg-white">
+                <img src={photo.src} alt={photo.alt} className="w-full object-cover" style={{ height: "220px" }} />
+                <div className="px-4 py-3">
+                  <p style={{ color: GREEN }} className="text-sm font-bold">{photo.label}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -175,6 +192,25 @@ export default function ServicesPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          <div className="mt-16">
+            <h3 style={{ color: GREEN }} className="text-xl font-black mb-2">施工写真</h3>
+            <p className="text-gray-500 text-sm mb-8">石神井川堆積土搬出工事（2022〜2023年）</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
+                <img src="/ishikamigawa-before.jpg" alt="石神井川堆積土搬出工事 施工前" className="w-full object-cover" style={{ height: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
+                </div>
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
+                <img src="/ishikamigawa-after.jpg" alt="石神井川堆積土搬出工事 施工後" className="w-full object-cover" style={{ height: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
