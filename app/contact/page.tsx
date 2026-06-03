@@ -21,7 +21,7 @@ export default function ContactPage() {
 
       <section style={{ backgroundColor: STRAW }} className="py-10">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-          {[["現場係員", "（現場監督補助）募集中"], ["月給", "225,000円〜400,000円"], ["未経験者", "歓迎・年齢不問"]].map(([title, sub]) => (
+          {[["現場監督・現場係員", "募集中"], ["月給", "225,000円〜400,000円"], ["未経験者", "歓迎・年齢不問"]].map(([title, sub]) => (
             <div key={title}>
               <p style={{ color: GREEN }} className="text-2xl font-black">{title}</p>
               <p style={{ color: GREEN }} className="text-sm font-bold mt-1 opacity-70">{sub}</p>
@@ -37,8 +37,8 @@ export default function ContactPage() {
           <p className="text-gray-500 mt-2 mb-10">北区の道路・公園・河川を守る仲間を募集しています。未経験者歓迎・年齢不問。</p>
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             {[
-              { label: "職種", value: "現場係員（現場監督補助）" },
-              { label: "仕事内容", value: "主に北区内の公共事業を請負って土木工事を行います。現場監督補助として活躍していただきます。" },
+              { label: "職種", value: "①現場監督　②現場係員（現場監督補助）" },
+              { label: "仕事内容", value: "主に北区内の公共事業を請負って土木工事を行います。現場監督または現場係員（現場監督補助）として活躍していただきます。" },
               { label: "雇用形態", value: "正社員（正社員登用あり・過去3年間実績あり）" },
               { label: "月給", value: "225,000円〜400,000円（基本給145,000円〜170,000円）" },
               { label: "各種手当", value: "物価手当42,000円〜90,000円 / 住宅手当20,000円〜50,000円 / 職務手当18,000円〜30,000円 / 現場・管理手当0円〜45,000円" },
