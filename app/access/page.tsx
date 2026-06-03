@@ -32,6 +32,7 @@ export default function AccessPage() {
               <div>
                 <p style={{ color: GREEN }} className="font-bold text-sm mb-1">最寄り駅</p>
                 <p className="text-sm">都電荒川線 梶原駅 徒歩5分</p>
+                <p className="text-sm mt-1">JR京浜東北線 王子駅より徒歩15分</p>
               </div>
               <div>
                 <p style={{ color: GREEN }} className="font-bold text-sm mb-1">営業時間</p>
@@ -43,12 +44,20 @@ export default function AccessPage() {
               <p style={{ color: GREEN }} className="font-bold text-sm mb-3">周辺ランドマーク</p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: STRAW }} />
-                  都電荒川線 梶原駅より徒歩約5分
+                  <span className="text-base">🗞️</span>
+                  読売新聞東京本社（近隣）
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: STRAW }} />
-                  JR京浜東北線 東十条駅より徒歩約15分
+                  <span className="text-base">🚃</span>
+                  都電荒川線 荒川車庫
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-base">🎡</span>
+                  荒川遊園地（あらかわ遊園）
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-base">🏛️</span>
+                  独立行政法人 造幣局（東京支局）
                 </li>
               </ul>
             </div>
@@ -56,7 +65,7 @@ export default function AccessPage() {
 
           <div className="rounded-2xl overflow-hidden shadow-md" style={{ border: `2px solid ${STRAW}` }}>
             <iframe
-              src="https://maps.google.com/maps?q=東京都北区堀船3丁目43番1号&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.583!2d139.7325!3d35.7543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018916c51f63b9b%3A0x9d4f49f9f1b6c2e!2z5p2x5Lqs6YO95YyX5Yy65aGp5Yem77yT5LiB55uu77yU77yT!5e0!3m2!1sja!2sjp!4v1717400000000!5m2!1sja!2sjp"
               width="100%"
               height="400"
               style={{ border: 0, display: "block" }}
