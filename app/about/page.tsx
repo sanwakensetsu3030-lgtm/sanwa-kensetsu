@@ -105,7 +105,9 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4">
           <p className="section-subtitle">Welfare</p>
           <h2 className="section-title">福利厚生</h2>
-          <p className="text-gray-500 mt-2 mb-10">社員の生活を大切にし、仕事以外での交流も積極的に行っています。</p>
+          <p className="text-gray-500 mt-2 mb-10 max-w-2xl leading-relaxed">
+            社員の生活を大切にし、仕事以外での交流も積極的に行っています。社員旅行やバーベキューには社員のご家族や日頃からお世話になっている協力会社の方々もお招きし、共に楽しむ時間を大切にしています。仕事上のつながりだけでなく、人と人としての絆を育む場として、こうした交流の機会を継続して設けています。
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { src: "/dogashima.jpg", alt: "社員旅行 堂ヶ島", label: "社員旅行", sub: "堂ヶ島（静岡県）" },
