@@ -105,9 +105,14 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4">
           <p className="section-subtitle">Welfare</p>
           <h2 className="section-title">福利厚生</h2>
-          <p className="text-gray-500 mt-2 mb-10 max-w-2xl leading-relaxed">
-            社員の生活を大切にし、仕事以外での交流も積極的に行っています。社員旅行やバーベキューには社員のご家族や日頃からお世話になっている協力会社の方々もお招きし、共に楽しむ時間を大切にしています。仕事上のつながりだけでなく、人と人としての絆を育む場として、こうした交流の機会を継続して設けています。
-          </p>
+          <div className="mt-2 mb-10 max-w-2xl space-y-4 text-gray-500 leading-relaxed">
+            <p>
+              社員旅行には、社員・従業員だけでなく、日頃からお世話になっている協力会社の方々も一緒に参加しています。仕事を通じて築いたつながりをより深める場として、毎回大切にしている行事のひとつです。
+            </p>
+            <p>
+              バーベキューの会では、普段現場で活躍してくれている作業員のご家族をお招きしています。奥さまやお子さんも一緒に集まり、みんなでバーベキューを楽しんだり、プールで遊んだりと、にぎやかで温かい時間を過ごしています。「家族ぐるみのおつき合い」を大切にしているのが、三和建設らしさのひとつです。
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { src: "/dogashima.jpg", alt: "社員旅行 堂ヶ島", label: "社員旅行", sub: "堂ヶ島（静岡県）" },
