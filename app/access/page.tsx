@@ -65,7 +65,7 @@ export default function AccessPage() {
 
           <div className="rounded-2xl overflow-hidden shadow-md" style={{ border: `2px solid ${STRAW}` }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.583!2d139.7325!3d35.7543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018916c51f63b9b%3A0x9d4f49f9f1b6c2e!2z5p2x5Lqs6YO95YyX5Yy65aGp5Yem77yT5LiB55uu77yU77yT!5e0!3m2!1sja!2sjp!4v1717400000000!5m2!1sja!2sjp"
+              src="https://maps.google.com/maps?q=三和建設株式会社+東京都北区堀船3丁目43番1号&t=&z=17&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="400"
               style={{ border: 0, display: "block" }}
