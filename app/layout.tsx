@@ -12,6 +12,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
+      <head>
+        <meta name="google-site-verification" content="t-ST77WRARa8R6alYj4OXITEhYsAC8f9ZftJkuxu2_k" />
+      </head>
       <body className="min-h-screen flex flex-col bg-white">
         <Header />
         <main className="flex-grow">{children}</main>
