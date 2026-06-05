@@ -93,13 +93,23 @@ export default function ContactPage() {
 
           <div className="md:col-span-2">
             <h2 style={{ color: GREEN }} className="font-black text-lg mb-6">お問い合わせフォーム</h2>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdf6qTPfTVmotalMFNyqPwQYB8fhaNMC6WCmiUJxDuAgl9Rlg/viewform?embedded=true"
-              width="100%"
-              height="800"
-              style={{ border: 0 }}
-              title="お問い合わせフォーム"
-            >読み込んでいます…</iframe>
+            <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: CREAM, border: `2px solid ${STRAW}` }}>
+              <p className="text-4xl mb-4">📝</p>
+              <p style={{ color: GREEN }} className="font-bold text-lg mb-2">採用・お問い合わせはこちら</p>
+              <p className="text-gray-500 text-sm leading-relaxed mb-8">
+                下のボタンからお問い合わせフォームを開いてください。<br />
+                ご入力後に送信していただくと、担当者よりご連絡いたします。
+              </p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdf6qTPfTVmotalMFNyqPwQYB8fhaNMC6WCmiUJxDuAgl9Rlg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-block text-lg px-10 py-4"
+              >
+                お問い合わせフォームを開く
+              </a>
+              <p className="text-gray-400 text-xs mt-6">※ 別タブで開きます</p>
+            </div>
           </div>
         </div>
       </section>
