@@ -51,7 +51,7 @@ export default function ContactPage() {
               { label: "学歴", value: "高校卒業以上" },
               { label: "必要経験", value: "不問（未経験者歓迎）" },
               { label: "資格取得支援", value: "土木施工管理技士2級・1級の取得を希望する場合、会社が支援します" },
-              { label: "職場環境", value: "アットホームな社風で休暇も取り易いです" },
+              { label: "職場環境", value: "風通しがよく、休暇も取りやすい職場です" },
             ].map((item, i) => (
               <div key={item.label} className={`grid grid-cols-3 py-4 px-6 gap-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
                 <dt style={{ color: GREEN }} className="text-sm font-bold col-span-1">{item.label}</dt>
