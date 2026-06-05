@@ -93,75 +93,13 @@ export default function ContactPage() {
 
           <div className="md:col-span-2">
             <h2 style={{ color: GREEN }} className="font-black text-lg mb-6">お問い合わせフォーム</h2>
-            <form className="space-y-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-sm font-bold mb-1" style={{ color: GREEN }}>
-                    お名前 <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="山田 太郎"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none transition-colors"
-                    style={{ ["--tw-ring-color" as string]: GREEN }}
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-1" style={{ color: GREEN }}>
-                    メールアドレス <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    placeholder="example@email.com"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none transition-colors"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-bold mb-1" style={{ color: GREEN }}>電話番号</label>
-                <input
-                  type="tel"
-                  placeholder="03-0000-0000"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none transition-colors"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-bold mb-1" style={{ color: GREEN }}>
-                  お問い合わせ種別 <span className="text-red-500">*</span>
-                </label>
-                <select
-                  required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none transition-colors text-gray-700"
-                >
-                  <option value="">選択してください</option>
-                  <option value="recruit-supervisor">採用について（現場監督・現場係員）</option>
-                  <option value="recruit-worker">採用について（作業員）</option>
-                  <option value="other">その他</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm font-bold mb-1" style={{ color: GREEN }}>
-                  メッセージ <span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  required
-                  rows={5}
-                  placeholder="お問い合わせ内容をご記入ください"
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none transition-colors resize-none"
-                />
-              </div>
-
-              <p className="text-xs text-gray-500">※ 送信後、2〜3営業日以内にご返信いたします。</p>
-
-              <button type="submit" className="btn-primary w-full text-center">
-                送信する
-              </button>
-            </form>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdf6qTPfTVmotalMFNyqPwQYB8fhaNMC6WCmiUJxDuAgl9Rlg/viewform?embedded=true"
+              width="100%"
+              height="800"
+              style={{ border: 0 }}
+              title="お問い合わせフォーム"
+            >読み込んでいます…</iframe>
           </div>
         </div>
       </section>
