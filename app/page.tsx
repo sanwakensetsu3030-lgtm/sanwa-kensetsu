@@ -182,7 +182,7 @@ export default function Home() {
           <p className="section-subtitle">Community</p>
           <h2 className="section-title">地域の人々や子どもたちが、<br />感謝してくれる仕事。</h2>
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="mt-10 grid grid-cols-1 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-sm" style={{ borderTop: `4px solid ${STRAW}` }}>
               <p className="text-3xl mb-4">💌</p>
               <h3 style={{ color: GREEN }} className="text-lg font-bold mb-3">地域の方からの感謝</h3>
