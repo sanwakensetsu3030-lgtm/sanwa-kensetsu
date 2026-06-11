@@ -213,7 +213,9 @@ export default function Home() {
               <p className="text-3xl mb-4">🚜</p>
               <h3 style={{ color: GREEN }} className="text-lg font-bold mb-3">心に残るエピソード</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                以前、「どうしてもショベルカーが動いているところを見たい」と泣いているお子さんに困っているお母さんがいました。昼休みにもかかわらず、作業員が重機を動かして見せてあげました。
+                作業員が昼休憩をしていたところ、ショベルカーが見たくてそばで泣いている男の子がいました。それを見た現場スタッフは、男の子にヤクルトをプレゼントしてから、その場でショベルカーを動かして見せてあげたそうです。
+              後日、会社のポストには、お母さんからの温かいお手紙と、男の子が一生懸命書いてくれた素敵な絵が届いていました。
+              私たちはこの街で暮らす人たちのすぐそばで、今日も頑張っています。
               </p>
               <div className="rounded-xl p-4 text-sm mb-4" style={{ backgroundColor: CREAM }}>
                 <p style={{ color: GREEN }} className="font-bold mb-1">後日、届いたもの</p>
