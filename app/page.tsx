@@ -55,12 +55,14 @@ export default function Home() {
             <span style={{ color: STRAW }}>守り続ける仕事。</span>
           </h1>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 max-w-2xl">
-            三和建設株式会社は、<strong className="text-white">昭和27年（1952年）に設立</strong>し、
-            70年以上にわたって東京都北区の道路・公園・河川を守り続けてきた地域密着型ゼネコンです。
+            わたしたちは、<br />
+            <strong className="text-white">昭和27年（1952年）に設立</strong>し、<br />
+            <strong className="text-white">70年以上</strong>にわたって東京都北区の道路・公園・河川を守り続けてきた<br />
+            <strong className="text-white">地域密着型</strong>ゼネコンです。
           </p>
           <p className="text-gray-400 text-base leading-relaxed mb-10 max-w-xl">
-            「危険・汚い・きつい」ではなく、
-            <strong className="text-white">かっこよく、頼りにされ、憧れられる仕事</strong>へ。
+            「危険・汚い・きつい」ではなく、<br />
+            <strong className="text-white">かっこよく、頼もしく、憧れられる仕事</strong>へ。
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/services" className="btn-straw text-center">事業内容・実績を見る</Link>
@@ -92,7 +94,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <p className="section-subtitle">Our Services</p>
           <h2 className="section-title">私たちの仕事</h2>
-          <p className="text-gray-500 mb-12 max-w-xl">日常の道路管理から災害時の緊急対応まで。地域インフラを守るプロフェッショナルです。</p>
+          <p className="text-gray-500 mb-12 max-w-xl">日常の道路管理から災害時の緊急対応まで。<br />地域インフラを守るプロフェッショナルです。</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((s) => (
               <div key={s.title} className="rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow bg-white" style={{ borderTop: `4px solid ${STRAW}` }}>
@@ -111,8 +113,8 @@ export default function Home() {
 
       {/* Emergency Team */}
       <section style={{ backgroundColor: GREEN }} className="py-20 text-white">
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+          <div className="md:col-span-2">
             <p style={{ color: STRAW }} className="font-bold tracking-widest text-xs mb-4 uppercase">Emergency Response</p>
             <h2 className="text-3xl font-black leading-tight mb-6">
               災害の最前線で、<br /><span style={{ color: STRAW }}>地域を守る。</span>
@@ -120,8 +122,11 @@ export default function Home() {
             <p className="text-gray-300 leading-relaxed mb-4">
               私たちは「土木緊急工作隊」に所属しています。台風・大雪・大雨などの災害が発生した際、消防や自衛隊と並び、危険なエリアの最前線で対応にあたります。
             </p>
-            <div className="mt-4 rounded-xl p-4 text-sm font-bold" style={{ backgroundColor: GREEN_LIGHT, color: STRAW }}>
+            <div className="mt-4 rounded-xl px-4 py-4 text-sm font-bold w-full" style={{ backgroundColor: GREEN_LIGHT, color: STRAW }}>
               日常の確かな仕事の積み重ねが、いざというときの力になる。<br />地域に頼りにされる存在であること——それが私たちの誇りです。
+            </div>
+            <div className="mt-6">
+              <Link href="/services#emergency" className="btn-straw inline-block">詳しく見る</Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -187,10 +192,10 @@ export default function Home() {
               <p className="text-3xl mb-4">💌</p>
               <h3 style={{ color: GREEN }} className="text-lg font-bold mb-3">地域の方からの感謝</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                現場では、地域の子どもたちから「ありがとう」と声をかけてもらうことがあります。子どもたちだけでなく、地域の方から感謝のお手紙をいただくこともあります。
+                現場で働く私たちの励みは、地域の子どもたちからの「ありがとう」という元気な声です。<br />子どもたちだけでなく、地域の方々から感謝のお手紙をいただく機会もあります。
               </p>
               <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                こうした地域からの感謝は、私たちの大きな力になります。日々の仕事への誇りと、もっと良い街をつくりたいという気持ちの源です。
+                皆様からいただく温かい感謝の言葉は、私たちの大きな力となり、街を良くしたいという情熱や仕事への誇りに繋がっています。
               </p>
               <div className="rounded-xl p-5 text-sm" style={{ backgroundColor: CREAM }}>
                 <p style={{ color: "#A89840" }} className="font-bold text-xs tracking-widest mb-3 uppercase">Voice from Community</p>
@@ -213,15 +218,9 @@ export default function Home() {
               <p className="text-3xl mb-4">🚜</p>
               <h3 style={{ color: GREEN }} className="text-lg font-bold mb-3">心に残るエピソード</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                作業員が昼休憩をしていたところ、ショベルカーが見たくてそばで泣いている男の子がいました。<br />それを見た現場スタッフは、男の子にヤクルトをプレゼントしてから、その場でショベルカーを動かして見せてあげたそうです。<br /><br />後日、会社のポストには、お母さんからの温かいお手紙と、男の子が一生懸命書いてくれた素敵な絵が届いていました。<br /><br />私たちはこの街で暮らす人たちのすぐそばで、今日も頑張っています。
+                作業員が昼休憩をしていたところ、ショベルカーが見たくてそばで泣いている男の子がいました。<br />それを見た現場スタッフは、男の子にヤクルトをプレゼントしてから、その場でショベルカーを動かして見せてあげたそうです。<br />後日、会社のポストには、お母さんからの温かいお手紙と、男の子が一生懸命書いてくれた素敵な絵が届いていました。<br /><br />私たちはこの街で暮らす人たちのすぐそばで、今日も頑張っています。
               </p>
-              <div className="rounded-xl p-4 text-sm mb-4" style={{ backgroundColor: CREAM }}>
-                <p style={{ color: GREEN }} className="font-bold mb-1">後日、届いたもの</p>
-                <ul className="text-gray-600 space-y-1">
-                  <li>📩 親御さんからの感謝のお手紙</li>
-                  <li>🎨 お子さんが描いてくれた似顔絵</li>
-                </ul>
-              </div>
+
               <img
                 src="/kodomo-e.jpg"
                 alt="お子さんが描いてくれた似顔絵"

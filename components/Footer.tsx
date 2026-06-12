@@ -10,7 +10,7 @@ export default function Footer() {
           <p className="text-gray-500 text-xs mb-4">昭和27年設立（1952年）</p>
           <p className="text-gray-300 text-sm leading-relaxed">
             東京都北区地域密着70年以上。<br />
-            道路・公園・河川を守り、地域の安心・安全な暮らしを支えています。
+            道路・公園・河川を守り、<br />地域の安心・安全な暮らしを支えています。
           </p>
         </div>
 

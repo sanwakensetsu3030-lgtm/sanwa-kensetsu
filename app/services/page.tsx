@@ -120,7 +120,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section style={{ backgroundColor: STRAW }} className="py-20">
+      <section id="emergency" style={{ backgroundColor: STRAW }} className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-14">
             <div>
@@ -150,19 +150,31 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { src: "/typhoon19-suibo.jpg", alt: "台風19号に伴う水防作業", label: "台風19号 水防作業" },
-              { src: "/arakawa-cleanup1.jpg", alt: "荒川河川敷清掃作業", label: "荒川河川敷 清掃作業" },
-              { src: "/arakawa-cleanup2.jpg", alt: "荒川河川敷清掃作業", label: "荒川河川敷 清掃作業" },
-            ].map((photo) => (
-              <div key={photo.src} className="rounded-2xl overflow-hidden shadow-sm bg-white">
-                <img src={photo.src} alt={photo.alt} className="w-full object-cover" style={{ height: "220px" }} />
-                <div className="px-4 py-3">
-                  <p style={{ color: GREEN }} className="text-sm font-bold">{photo.label}</p>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
+              <img src="/typhoon19-suibo.jpg" alt="台風19号に伴う水防作業" className="w-full object-cover" style={{ height: "220px" }} />
+              <div className="px-4 py-3">
+                <p style={{ color: GREEN }} className="text-sm font-bold">台風19号 水防作業</p>
               </div>
-            ))}
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
+              <img src="/suibo-training1.jpg" alt="水防訓練" className="w-full object-cover" style={{ height: "220px" }} />
+              <div className="px-4 py-3 flex items-baseline gap-3">
+                <p style={{ color: GREEN }} className="text-sm font-bold">水防訓練</p>
+                <p style={{ color: GREEN }} className="text-xs opacity-70">定期的に訓練をおこなっております</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
+              <div className="grid grid-cols-2" style={{ height: "220px", gap: "3px", backgroundColor: STRAW }}>
+                <img src="/arakawa-cleanup1.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
+                <img src="/arakawa-cleanup2.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
+              </div>
+              <div className="px-4 py-3">
+                <p style={{ color: GREEN }} className="text-sm font-bold">荒川河川敷 清掃作業</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -177,9 +189,9 @@ export default function ServicesPage() {
             <table className="w-full text-sm bg-white rounded-xl overflow-hidden shadow-sm">
               <thead style={{ backgroundColor: GREEN }}>
                 <tr>
-                  <th className="py-4 px-6 text-left font-bold text-white">エリア</th>
-                  <th className="py-4 px-6 text-left font-bold text-white">工事内容</th>
-                  <th className="py-4 px-6 text-left font-bold text-white">規模・備考</th>
+                  <th className="py-4 px-6 text-left font-bold text-white">発注者</th>
+                  <th className="py-4 px-6 text-left font-bold text-white">工事件名</th>
+                  <th className="py-4 px-6 text-left font-bold text-white">工事期間</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
@@ -196,7 +208,7 @@ export default function ServicesPage() {
 
           <div className="mt-16">
             <h3 style={{ color: GREEN }} className="text-xl font-black mb-2">施工写真</h3>
-            <p className="text-gray-500 text-sm mb-8">石神井川堆積土搬出工事（2022〜2023年）</p>
+            <p className="text-gray-500 text-sm mb-8">石神井川堆積土搬出工事</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
                 <img src="/ishikamigawa-before.jpg" alt="石神井川堆積土搬出工事 施工前" className="w-full object-cover" style={{ height: "280px" }} />
@@ -206,6 +218,27 @@ export default function ServicesPage() {
               </div>
               <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
                 <img src="/ishikamigawa-after.jpg" alt="石神井川堆積土搬出工事 施工後" className="w-full object-cover" style={{ height: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16">
+            <p className="text-gray-500 text-sm mb-8">田端中学校新築グラウンド整備工事</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
+                <img src="/tabata-before.jpg" alt="田端中学校新築グラウンド整備工事 施工前" className="w-full object-cover" style={{ height: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
+                </div>
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
+                <div className="grid grid-cols-2" style={{ height: "280px", gap: "3px", backgroundColor: STRAW }}>
+                  <img src="/tabata-after1.jpg" alt="田端中学校新築グラウンド整備工事 施工後" className="w-full h-full object-cover" />
+                  <img src="/tabata-after2.jpg" alt="田端中学校新築グラウンド整備工事 施工後" className="w-full h-full object-cover" />
+                </div>
                 <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
                   <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
                 </div>
