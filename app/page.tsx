@@ -66,7 +66,7 @@ export default function Home() {
             >
               わたしたちは、<br />
               <strong className="text-white">昭和27年（1952年）に設立</strong>し、<br />
-              <strong className="text-white">70年以上</strong>にわたって東京都北区の道路・公園・河川を守り続けてきた<br />
+              <strong className="text-white">70年以上</strong>にわたって東京都北区の<br />道路・公園・河川を守り続けてきた<br />
               <strong className="text-white">地域密着型</strong>ゼネコンです。
             </p>
             <p
