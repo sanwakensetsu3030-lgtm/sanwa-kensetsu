@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HeroSlideshow from "@/components/HeroSlideshow";
 
 const GREEN = "#2D6A3F";
 const GREEN_DARK = "#1E4D2B";
@@ -38,35 +39,43 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section style={{ backgroundColor: GREEN, minHeight: "90vh" }} className="relative flex items-center">
+      <section style={{ backgroundColor: GREEN, minHeight: "90vh" }} className="relative flex items-center overflow-hidden">
+        <HeroSlideshow />
+        {/* 左側テキストエリアを緑で保護するグラデーション */}
         <div
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 z-10"
+          style={{ background: `linear-gradient(to right, ${GREEN} 38%, transparent 58%)` }}
+        />
+        <div
+          className="absolute inset-0 opacity-10 z-10"
           style={{ backgroundImage: `repeating-linear-gradient(45deg, ${STRAW} 0px, ${STRAW} 2px, transparent 2px, transparent 80px)` }}
         />
-        <div className="relative max-w-6xl mx-auto px-4 w-full py-24">
-          <div className="mb-5 flex items-center gap-3">
-            <span className="inline-block w-8 h-0.5" style={{ backgroundColor: STRAW }} />
-            <p style={{ color: STRAW }} className="font-bold tracking-widest text-xs uppercase">
-              Since 1952 — 東京都北区地域密着
+        <div className="relative z-20 max-w-6xl mx-auto px-4 w-full py-24">
+          <div className="md:w-2/5">
+            <div className="mb-5 flex items-center gap-3">
+              <span className="inline-block w-8 h-0.5" style={{ backgroundColor: STRAW }} />
+              <p style={{ color: STRAW }} className="font-bold tracking-widest text-xs uppercase">
+                Since 1952 — 東京都北区地域密着
+              </p>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6 text-white">
+              この街の道を、<br />
+              <span style={{ color: STRAW }}>守り続ける仕事。</span>
+            </h1>
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4">
+              わたしたちは、<br />
+              <strong className="text-white">昭和27年（1952年）に設立</strong>し、<br />
+              <strong className="text-white">70年以上</strong>にわたって東京都北区の道路・公園・河川を守り続けてきた<br />
+              <strong className="text-white">地域密着型</strong>ゼネコンです。
             </p>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6 text-white">
-            この街の道を、<br />
-            <span style={{ color: STRAW }}>守り続ける仕事。</span>
-          </h1>
-          <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 max-w-2xl">
-            わたしたちは、<br />
-            <strong className="text-white">昭和27年（1952年）に設立</strong>し、<br />
-            <strong className="text-white">70年以上</strong>にわたって東京都北区の道路・公園・河川を守り続けてきた<br />
-            <strong className="text-white">地域密着型</strong>ゼネコンです。
-          </p>
-          <p className="text-gray-400 text-base leading-relaxed mb-10 max-w-xl">
-            「危険・汚い・きつい」ではなく、<br />
-            <strong className="text-white">かっこよく、頼もしく、憧れられる仕事</strong>へ。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/services" className="btn-straw text-center">事業内容・実績を見る</Link>
-            <Link href="/contact" className="btn-outline text-center">採用情報・お問い合わせ</Link>
+            <p className="text-gray-400 text-base leading-relaxed mb-10">
+              「危険・汚い・きつい」ではなく、<br />
+              <strong className="text-white">かっこよく、頼もしく、憧れられる仕事</strong>へ。
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/services" className="btn-straw text-center">事業内容・実績を見る</Link>
+              <Link href="/contact" className="btn-outline text-center">採用情報・お問い合わせ</Link>
+            </div>
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-xs gap-2 animate-bounce" style={{ color: STRAW, opacity: 0.6 }}>
