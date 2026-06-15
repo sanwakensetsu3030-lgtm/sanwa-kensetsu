@@ -21,7 +21,7 @@ export default function HeroSlideshow() {
       {images.map((src, i) => (
         <div
           key={src}
-          className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+          className="absolute inset-0 bg-cover bg-center transition-opacity duration-[2500ms]"
           style={{
             backgroundImage: `url(${src})`,
             opacity: i === current ? 1 : 0,
