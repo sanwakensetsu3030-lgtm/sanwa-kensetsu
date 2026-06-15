@@ -67,7 +67,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section id="main-services" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <p className="section-subtitle">Our Services</p>
           <h2 className="section-title">主な事業内容</h2>

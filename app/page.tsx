@@ -119,7 +119,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/services" className="btn-primary">詳しい事業内容を見る</Link>
+            <Link href="/services#main-services" className="btn-primary">詳しい事業内容を見る</Link>
           </div>
         </div>
       </section>
