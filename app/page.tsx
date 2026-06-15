@@ -61,7 +61,7 @@ export default function Home() {
               <span style={{ color: STRAW }}>守り続ける仕事。</span>
             </h1>
             <p
-              className="text-gray-200 text-lg md:text-xl leading-relaxed mb-4"
+              className="text-gray-200 text-sm md:text-xl leading-relaxed mb-4"
               style={{ textShadow: "0 1px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.6)" }}
             >
               わたしたちは、<br />
