@@ -165,15 +165,13 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
-              <div className="grid grid-cols-2" style={{ height: "220px", gap: "3px", backgroundColor: STRAW }}>
-                <img src="/arakawa-cleanup1.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
-                <img src="/arakawa-cleanup2.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
-              </div>
-              <div className="px-4 py-3">
-                <p style={{ color: GREEN }} className="text-sm font-bold">荒川河川敷 清掃作業</p>
-              </div>
+          <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
+            <div className="grid grid-cols-2" style={{ height: "320px", gap: "3px", backgroundColor: STRAW }}>
+              <img src="/arakawa-cleanup1.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
+              <img src="/arakawa-cleanup2.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
+            </div>
+            <div className="px-4 py-3">
+              <p style={{ color: GREEN }} className="text-sm font-bold">荒川河川敷 清掃作業</p>
             </div>
           </div>
         </div>
