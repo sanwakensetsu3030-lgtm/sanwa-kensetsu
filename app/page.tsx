@@ -43,7 +43,7 @@ export default function Home() {
         <HeroSlideshow />
         <div
           className="absolute inset-y-0 left-0 opacity-10 z-10"
-          style={{ width: "40%", backgroundImage: `repeating-linear-gradient(45deg, ${STRAW} 0px, ${STRAW} 2px, transparent 2px, transparent 80px)` }}
+          style={{ width: "55%", backgroundImage: `repeating-linear-gradient(45deg, ${STRAW} 0px, ${STRAW} 2px, transparent 2px, transparent 80px)`, maskImage: "linear-gradient(to right, black 55%, transparent 100%)", WebkitMaskImage: "linear-gradient(to right, black 55%, transparent 100%)" }}
         />
         <div className="relative z-20 max-w-6xl mx-auto px-4 w-full flex flex-col justify-between" style={{ minHeight: "calc(90vh - 60px)", paddingTop: "2.5vh", paddingBottom: "2.5vh" }}>
           <div className="md:w-3/5">
