@@ -165,8 +165,8 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
-            <div className="grid grid-cols-2" style={{ height: "320px", gap: "3px", backgroundColor: STRAW }}>
+          <div className="rounded-2xl shadow-sm bg-white overflow-hidden">
+            <div className="rounded-t-2xl overflow-hidden grid grid-cols-2" style={{ height: "320px", gap: "3px", backgroundColor: STRAW }}>
               <img src="/arakawa-cleanup1.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
               <img src="/arakawa-cleanup2.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
             </div>
