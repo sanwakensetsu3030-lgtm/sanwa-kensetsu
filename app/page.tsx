@@ -42,8 +42,8 @@ export default function Home() {
       <section style={{ backgroundColor: GREEN, minHeight: "90vh" }} className="relative flex items-center overflow-hidden">
         <HeroSlideshow />
         <div
-          className="absolute inset-0 opacity-10 z-10"
-          style={{ backgroundImage: `repeating-linear-gradient(45deg, ${STRAW} 0px, ${STRAW} 2px, transparent 2px, transparent 80px)` }}
+          className="absolute inset-y-0 left-0 opacity-10 z-10"
+          style={{ width: "40%", backgroundImage: `repeating-linear-gradient(45deg, ${STRAW} 0px, ${STRAW} 2px, transparent 2px, transparent 80px)` }}
         />
         <div className="relative z-20 max-w-6xl mx-auto px-4 w-full flex flex-col justify-between" style={{ minHeight: "calc(90vh - 60px)", paddingTop: "6vh", paddingBottom: "6vh" }}>
           <div className="md:w-3/5">
