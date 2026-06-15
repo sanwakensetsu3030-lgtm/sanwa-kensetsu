@@ -24,8 +24,6 @@ export default function HeroSlideshow() {
           className="absolute inset-0 bg-cover bg-center transition-opacity duration-[2500ms]"
           style={{
             backgroundImage: `url(${src})`,
-            backgroundSize: i === 1 ? "120%" : "cover",
-            backgroundRepeat: "no-repeat",
             opacity: i === current ? 1 : 0,
             filter: "sepia(55%) contrast(110%) brightness(82%) saturate(65%)",
           }}
