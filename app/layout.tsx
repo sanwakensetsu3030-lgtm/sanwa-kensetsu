@@ -1,10 +1,10 @@
 ﻿import type { Metadata } from "next";
-import { Reggae_One } from "next/font/google";
+import { Stick } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const reggaeOne = Reggae_One({
+const stick = Stick({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-reggae",
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="google-site-verification" content="t-ST77WRARa8R6alYj4OXITEhYsAC8f9ZftJkuxu2_k" />
       </head>
-      <body className={`min-h-screen flex flex-col bg-white ${reggaeOne.variable}`}>
+      <body className={`min-h-screen flex flex-col bg-white ${stick.variable}`}>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
