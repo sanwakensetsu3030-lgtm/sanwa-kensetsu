@@ -1,15 +1,7 @@
 ﻿import type { Metadata } from "next";
-import { Stick } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-const stick = Stick({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-reggae",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "三和建設株式会社 | 東京都北区の建設・土木工事",
@@ -23,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="google-site-verification" content="t-ST77WRARa8R6alYj4OXITEhYsAC8f9ZftJkuxu2_k" />
       </head>
-      <body className={`min-h-screen flex flex-col bg-white ${stick.variable}`}>
+      <body className="min-h-screen flex flex-col bg-white">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

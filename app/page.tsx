@@ -54,8 +54,8 @@ export default function Home() {
               </p>
             </div>
             <h1
-              className="text-4xl md:text-6xl leading-tight mb-6 text-white"
-              style={{ fontFamily: "var(--font-reggae)", textShadow: "0 2px 12px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.5), 2px 2px 0 rgba(0,0,0,0.4)" }}
+              className="text-4xl md:text-6xl font-black leading-tight mb-6 text-white"
+              style={{ textShadow: "0 2px 12px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.5), 2px 2px 0 rgba(0,0,0,0.4)" }}
             >
               この街の道を、<br />
               <span style={{ color: STRAW }}>守り続ける仕事。</span>
