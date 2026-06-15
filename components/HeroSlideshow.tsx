@@ -25,6 +25,7 @@ export default function HeroSlideshow() {
           style={{
             backgroundImage: `url(${src})`,
             backgroundSize: i === 1 ? "120%" : "cover",
+            backgroundRepeat: "no-repeat",
             opacity: i === current ? 1 : 0,
             filter: "sepia(55%) contrast(110%) brightness(82%) saturate(65%)",
           }}
