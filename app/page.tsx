@@ -45,7 +45,7 @@ export default function Home() {
           className="absolute inset-0 opacity-10 z-10"
           style={{ backgroundImage: `repeating-linear-gradient(45deg, ${STRAW} 0px, ${STRAW} 2px, transparent 2px, transparent 80px)` }}
         />
-        <div className="relative z-20 max-w-6xl mx-auto px-4 w-full py-24">
+        <div className="relative z-20 max-w-6xl mx-auto px-4 w-full flex flex-col justify-between" style={{ minHeight: "calc(90vh - 60px)", paddingTop: "6vh", paddingBottom: "6vh" }}>
           <div className="md:w-3/5">
             <div className="mb-5 flex items-center gap-3">
               <span className="inline-block w-8 h-0.5" style={{ backgroundColor: STRAW }} />
@@ -70,16 +70,16 @@ export default function Home() {
               <strong className="text-white">地域密着型</strong>ゼネコンです。
             </p>
             <p
-              className="text-gray-300 text-base leading-relaxed mb-10"
+              className="text-gray-300 text-base leading-relaxed"
               style={{ textShadow: "0 1px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.6)" }}
             >
               「危険・汚い・きつい」ではなく、<br />
               <strong className="text-white">かっこよく、頼もしく、憧れられる仕事</strong>へ。
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/services" className="btn-straw text-center">事業内容・実績を見る</Link>
-              <Link href="/contact" className="btn-outline text-center">採用情報・お問い合わせ</Link>
-            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 md:w-3/5">
+            <Link href="/services" className="btn-straw text-center">事業内容・実績を見る</Link>
+            <Link href="/contact" className="btn-outline text-center">採用情報・お問い合わせ</Link>
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-xs gap-2 animate-bounce" style={{ color: STRAW, opacity: 0.6 }}>
