@@ -45,7 +45,7 @@ export default function Home() {
           className="absolute inset-y-0 left-0 opacity-10 z-10"
           style={{ width: "40%", backgroundImage: `repeating-linear-gradient(45deg, ${STRAW} 0px, ${STRAW} 2px, transparent 2px, transparent 80px)` }}
         />
-        <div className="relative z-20 max-w-6xl mx-auto px-4 w-full flex flex-col justify-between" style={{ minHeight: "calc(90vh - 60px)", paddingTop: "6vh", paddingBottom: "6vh" }}>
+        <div className="relative z-20 max-w-6xl mx-auto px-4 w-full flex flex-col justify-between" style={{ minHeight: "calc(90vh - 60px)", paddingTop: "2.5vh", paddingBottom: "2.5vh" }}>
           <div className="md:w-3/5">
             <div className="mb-5 flex items-center gap-3">
               <span className="inline-block w-8 h-0.5" style={{ backgroundColor: STRAW }} />
