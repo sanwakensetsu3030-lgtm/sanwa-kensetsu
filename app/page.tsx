@@ -105,9 +105,8 @@ export default function Home() {
       {/* Services */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <p className="section-subtitle">Our Services</p>
-          <h2 className="section-title">私たちの仕事</h2>
-          <p className="text-gray-500 mb-12 max-w-xl">日常の道路管理から災害時の緊急対応まで。<br />地域インフラを守るプロフェッショナルです。</p>
+          <h2 className="section-title"><span style={{ fontSize: "1.3em" }}>【道路】</span>の裏も表も守る。<br />それがわたしたちの仕事。</h2>
+          <p className="text-gray-500 mb-12 max-w-xl mt-4">日常の道路管理から災害時の緊急対応まで。<br />地域インフラを守るプロフェッショナルです。</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((s) => (
               <div key={s.title} className="rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow bg-white" style={{ borderTop: `4px solid ${STRAW}` }}>
@@ -144,8 +143,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h2 className="section-title"><span style={{ fontSize: "1.3em" }}>【道路】</span>の裏も表も守る。<br />それがわたしたちの仕事。</h2>
-            <p className="text-gray-600 leading-relaxed mt-4 mb-3">
+            <p className="text-gray-600 leading-relaxed mb-3">
               私たちの仕事は、皆さんが毎日利用する道路の整備・補修が中心です。具体的には以下のような工事を行っています。
             </p>
             <ul className="mb-6 space-y-2">
