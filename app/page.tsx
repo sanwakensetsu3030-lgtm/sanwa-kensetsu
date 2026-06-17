@@ -102,24 +102,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3K */}
-      <section className="py-16" style={{ backgroundColor: CREAM }}>
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p style={{ color: STRAW_DARK }} className="font-bold tracking-widest text-xs mb-6 uppercase">Changing the Image</p>
-          <p style={{ color: GREEN }} className="text-2xl font-black leading-relaxed mb-8">
-            「3K」を、<br /><span style={{ color: STRAW_DARK }}>かっこいい仕事</span>へ。
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm">
-            {[["危険", "頼りにされる最前線の仕事"], ["汚い", "街を美しく保つプロの仕事"], ["きつい", "仲間と誇りを持てる仕事"]].map(([before, after]) => (
-              <div key={before} className="flex items-center gap-3 justify-center">
-                <span className="line-through text-gray-400">{before}</span>
-                <span style={{ color: GREEN }}>→</span>
-                <span style={{ color: GREEN }} className="font-bold">{after}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* AI Image */}
+      <img src="/ai-image.png" alt="三和建設イメージ" className="w-full block" />
 
       {/* Services */}
       <section className="py-20 bg-white">
@@ -139,29 +123,6 @@ export default function Home() {
           </div>
           <div className="text-center mt-10">
             <Link href="/services#main-services" className="btn-primary">詳しい事業内容を見る</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Work */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div>
-            <p className="text-gray-600 leading-relaxed mb-3">
-              私たちの仕事は、皆さんが毎日利用する道路の整備・補修が中心です。具体的には以下のような工事を行っています。
-            </p>
-            <ul className="mb-6 space-y-2">
-              {["車道・歩道の舗装", "L形ブロック", "防護柵", "集水桝や取付管など"].map((item) => (
-                <li key={item} className="flex items-center gap-3 text-sm text-gray-600">
-                  <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: STRAW }} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              目に見える部分も、見えない部分も——地域のインフラを支える仕事として、誠実に取り組み続けています。
-            </p>
-            <Link href="/services" className="btn-primary inline-block">事業内容を詳しく見る</Link>
           </div>
         </div>
       </section>
