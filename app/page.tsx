@@ -144,7 +144,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h2 className="section-title">わたしたちの仕事、<br />それは<br />みんなの生活にかかせない<br /><span style={{ color: GREEN }}>【道路】</span>の裏も表も守ること</h2>
+            <h2 className="section-title">わたしたちの仕事.<br />それは<br />みんなの生活にかかせない<br /><span style={{ color: GREEN }}>【道路】</span>の裏も表も守る</h2>
             <p className="text-gray-600 leading-relaxed mt-4 mb-3">
               私たちの仕事は、皆さんが毎日利用する道路の整備・補修が中心です。具体的には以下のような工事を行っています。
             </p>
