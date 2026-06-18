@@ -218,8 +218,8 @@ export default function ServicesPage() {
                   <polygon points="56,6 80,20 56,34" fill={STRAW} />
                 </svg>
                 <div className="flex flex-col border-t-2 border-[#C8BA6A] md:border-t-0 md:border-l-2 md:border-[#C8BA6A]">
-                  <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="w-full object-cover" style={{ height: "280px" }} />
-                  <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                  <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2">
