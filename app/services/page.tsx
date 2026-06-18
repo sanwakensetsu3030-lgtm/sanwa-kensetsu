@@ -152,13 +152,13 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
-              <img src="/typhoon19-suibo.jpg" alt="台風19号に伴う水防作業" className="w-full object-cover" style={{ height: "220px" }} />
+              <img src="/typhoon19-suibo.jpg" alt="台風19号に伴う水防作業" className="w-full object-cover" style={{ height: "320px" }} />
               <div className="px-4 py-3">
                 <p style={{ color: GREEN }} className="text-sm font-bold">台風19号 水防作業</p>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
-              <img src="/suibo-training1.jpg" alt="水防訓練" className="w-full object-cover" style={{ height: "220px" }} />
+              <img src="/suibo-training1.jpg" alt="水防訓練" className="w-full object-cover" style={{ height: "320px" }} />
               <div className="px-4 py-3 flex items-baseline gap-3">
                 <p style={{ color: GREEN }} className="text-sm font-bold">水防訓練</p>
                 <p style={{ color: GREEN }} className="text-xs opacity-70">定期的に訓練をおこなっております</p>
