@@ -63,7 +63,7 @@ body {
     font-size: 1.875rem;
     font-weight: 700;
     color: #2D6A3F;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
   }
   .section-subtitle {
     color: #A89840;
@@ -71,6 +71,11 @@ body {
     font-size: 0.75rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .section-heading {
+    border-left: 6px solid #C8BA6A;
+    padding: 0.6rem 0 0.6rem 1rem;
+    margin-bottom: 2rem;
   }
 }

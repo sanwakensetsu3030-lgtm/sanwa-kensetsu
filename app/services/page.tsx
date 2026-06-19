@@ -69,8 +69,10 @@ export default function ServicesPage() {
 
       <section id="main-services" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <p className="section-subtitle">Our Services</p>
-          <h2 className="section-title">主な事業内容</h2>
+          <div className="section-heading">
+            <p className="section-subtitle">Our Services</p>
+            <h2 className="section-title">主な事業内容</h2>
+          </div>
           <p className="text-gray-500 mt-2 mb-12">
             東京都北区の道路インフラを守ることを中心に、公園・河川・災害対応まで幅広く対応しています。
           </p>
@@ -116,6 +118,144 @@ export default function ServicesPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16">
+            <div className="section-heading">
+              <p className="section-subtitle">Works</p>
+              <h2 className="section-title">施工実績</h2>
+            </div>
+
+            <div className="overflow-x-auto shadow-sm" style={{ border: `2px solid ${GREEN}` }}>
+              <table className="w-full text-sm bg-white" style={{ borderCollapse: "collapse" }}>
+                <thead style={{ backgroundColor: GREEN }}>
+                  <tr>
+                    <th className="py-4 px-6 text-left font-bold text-white">発注者</th>
+                    <th className="py-4 px-6 text-left font-bold text-white">工事件名</th>
+                    <th className="py-4 px-6 text-left font-bold text-white">工事期間</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {achievements.map((a, i) => (
+                    <tr key={i} className="hover:bg-gray-50 transition-colors">
+                      <td className="py-4 px-6 text-gray-700">{a.area}</td>
+                      <td className="py-4 px-6 font-medium" style={{ color: GREEN }}>{a.type}</td>
+                      <td className="py-4 px-6 text-gray-500">{a.scale}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mt-16">
+            <div className="section-heading">
+              <p className="section-subtitle">Construction Photos</p>
+              <h2 className="section-title">施工写真</h2>
+            </div>
+            <div className="inline-block px-4 py-1 text-sm font-bold rounded-tl-xl rounded-tr-xl relative z-10" style={{ border: `2px solid ${STRAW}`, borderBottom: "none", color: GREEN, backgroundColor: "white", marginBottom: "-2px" }}>補助87号線街路築造工事・交差点改良工事</div>
+            <div className="rounded-b-2xl rounded-tr-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
+              <div className="relative grid grid-cols-1 md:grid-cols-2">
+                <div className="flex flex-col">
+                  <img src="/hojo87-before1.jpg" alt="補助87号線街路築造工事 施工前①" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/hojo87-before2.jpg" alt="補助87号線街路築造工事 施工前②" className="w-full object-cover" style={{ height: "280px" }} />
+                </div>
+                <svg className="absolute z-10 hidden md:block" style={{ left: "50%", top: "280px", transform: "translateX(-50%) translateY(-50%)", width: "80px", height: "40px", filter: "drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(2px 2px 0 rgba(0,0,0,0.9))" }} viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0" y1="20" x2="60" y2="20" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
+                  <polygon points="56,6 80,20 56,34" fill={STRAW} />
+                </svg>
+                <div className="flex flex-col border-t-2 border-[#C8BA6A] md:border-t-0 md:border-l-2 md:border-[#C8BA6A]">
+                  <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                  <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
+                </div>
+                <div className="px-4 py-3 md:border-l-2 border-[#C8BA6A]" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center py-3 md:hidden" style={{ backgroundColor: CREAM }}>
+                <span className="text-2xl" style={{ color: GREEN }}>↓</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <div className="inline-block px-4 py-1 text-sm font-bold rounded-tl-xl rounded-tr-xl relative z-10" style={{ border: `2px solid ${STRAW}`, borderBottom: "none", color: GREEN, backgroundColor: "white", marginBottom: "-2px" }}>路面補修等工事・汚水桝等調整工事（北1293号：3工区）</div>
+            <div className="rounded-b-2xl rounded-tr-2xl overflow-hidden shadow-sm grid grid-cols-1 md:grid-cols-2 md:items-stretch relative" style={{ border: `2px solid ${STRAW}` }}>
+              <div className="flex flex-col">
+                <img src="/ukima-before3.jpg" alt="路面補修等工事 施工前" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
+                </div>
+              </div>
+              <svg className="absolute z-10 hidden md:block" style={{ left: "50%", top: "calc(50% - 22px)", transform: "translateX(-50%) translateY(-50%)", width: "80px", height: "40px", filter: "drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(2px 2px 0 rgba(0,0,0,0.9))" }} viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="20" x2="60" y2="20" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
+                <polygon points="56,6 80,20 56,34" fill={STRAW} />
+              </svg>
+              <div className="flex items-center justify-center py-3 md:hidden" style={{ backgroundColor: CREAM }}>
+                <span className="text-2xl" style={{ color: GREEN }}>↓</span>
+              </div>
+              <div className="flex flex-col border-t-2 border-[#C8BA6A] md:border-t-0 md:border-l-2 md:border-[#C8BA6A]">
+                <img src="/ukima-after3.jpg" alt="路面補修等工事 施工後" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <div className="inline-block px-4 py-1 text-sm font-bold rounded-tl-xl rounded-tr-xl relative z-10" style={{ border: `2px solid ${STRAW}`, borderBottom: "none", color: GREEN, backgroundColor: "white", marginBottom: "-2px" }}>石神井川堆積土搬出工事</div>
+            <div className="rounded-b-2xl rounded-tr-2xl overflow-hidden shadow-sm grid grid-cols-1 md:grid-cols-2 md:items-stretch relative" style={{ border: `2px solid ${STRAW}` }}>
+              <div className="flex flex-col">
+                <img src="/ishikamigawa-before.jpg" alt="石神井川堆積土搬出工事 施工前" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
+                </div>
+              </div>
+              <svg className="absolute z-10 hidden md:block" style={{ left: "50%", top: "calc(50% - 22px)", transform: "translateX(-50%) translateY(-50%)", width: "80px", height: "40px", filter: "drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(2px 2px 0 rgba(0,0,0,0.9))" }} viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="20" x2="60" y2="20" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
+                <polygon points="56,6 80,20 56,34" fill={STRAW} />
+              </svg>
+              <div className="flex items-center justify-center py-3 md:hidden" style={{ backgroundColor: CREAM }}>
+                <span className="text-2xl" style={{ color: GREEN }}>↓</span>
+              </div>
+              <div className="flex flex-col border-t-2 border-[#C8BA6A] md:border-t-0 md:border-l-2 md:border-[#C8BA6A]">
+                <img src="/ishikamigawa-after.jpg" alt="石神井川堆積土搬出工事 施工後" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <div className="inline-block px-4 py-1 text-sm font-bold rounded-tl-xl rounded-tr-xl relative z-10" style={{ border: `2px solid ${STRAW}`, borderBottom: "none", color: GREEN, backgroundColor: "white", marginBottom: "-2px" }}>田端中学校新築グラウンド整備工事</div>
+            <div className="rounded-b-2xl rounded-tr-2xl overflow-hidden shadow-sm grid grid-cols-1 md:grid-cols-2 md:items-stretch relative" style={{ border: `2px solid ${STRAW}` }}>
+              <div className="flex flex-col">
+                <img src="/tabata-before.jpg" alt="田端中学校新築グラウンド整備工事 施工前" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
+                </div>
+              </div>
+              <svg className="absolute z-10 hidden md:block" style={{ left: "50%", top: "calc(50% - 22px)", transform: "translateX(-50%) translateY(-50%)", width: "80px", height: "40px", filter: "drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(2px 2px 0 rgba(0,0,0,0.9))" }} viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="20" x2="60" y2="20" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
+                <polygon points="56,6 80,20 56,34" fill={STRAW} />
+              </svg>
+              <div className="flex items-center justify-center py-3 md:hidden" style={{ backgroundColor: CREAM }}>
+                <span className="text-2xl" style={{ color: GREEN }}>↓</span>
+              </div>
+              <div className="flex flex-col border-t-2 border-[#C8BA6A] md:border-t-0 md:border-l-2 md:border-[#C8BA6A]">
+                <img src="/tabata-after1.jpg" alt="田端中学校新築グラウンド整備工事 施工後" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
+                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
+                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -172,117 +312,6 @@ export default function ServicesPage() {
             </div>
             <div className="px-4 py-3">
               <p style={{ color: GREEN }} className="text-sm font-bold">荒川河川敷 清掃作業</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20" style={{ backgroundColor: "#fafaf7" }}>
-        <div className="max-w-6xl mx-auto px-4">
-          <p className="section-subtitle">Works</p>
-          <h2 className="section-title">施工実績</h2>
-          <div className="mb-10"></div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm bg-white rounded-xl overflow-hidden shadow-sm">
-              <thead style={{ backgroundColor: GREEN }}>
-                <tr>
-                  <th className="py-4 px-6 text-left font-bold text-white">発注者</th>
-                  <th className="py-4 px-6 text-left font-bold text-white">工事件名</th>
-                  <th className="py-4 px-6 text-left font-bold text-white">工事期間</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {achievements.map((a, i) => (
-                  <tr key={i} className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 text-gray-700">{a.area}</td>
-                    <td className="py-4 px-6 font-medium" style={{ color: GREEN }}>{a.type}</td>
-                    <td className="py-4 px-6 text-gray-500">{a.scale}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <div className="mt-16">
-            <h3 style={{ color: GREEN }} className="text-xl font-black mb-2">施工写真</h3>
-            <p className="text-gray-500 text-sm mb-8">補助87号線街路築造工事・交差点改良工事</p>
-            <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
-              <div className="relative grid grid-cols-1 md:grid-cols-2">
-                <div className="flex flex-col">
-                  <img src="/hojo87-before1.jpg" alt="補助87号線街路築造工事 施工前①" className="w-full object-cover" style={{ height: "280px" }} />
-                  <img src="/hojo87-before2.jpg" alt="補助87号線街路築造工事 施工前②" className="w-full object-cover" style={{ height: "280px" }} />
-                </div>
-                <svg className="absolute z-10 hidden md:block" style={{ left: "50%", top: "280px", transform: "translateX(-50%) translateY(-50%)", width: "80px", height: "40px", filter: "drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(2px 2px 0 rgba(0,0,0,0.9))" }} viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="0" y1="20" x2="60" y2="20" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
-                  <polygon points="56,6 80,20 56,34" fill={STRAW} />
-                </svg>
-                <div className="flex flex-col border-t-2 border-[#C8BA6A] md:border-t-0 md:border-l-2 md:border-[#C8BA6A]">
-                  <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
-                  <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
-                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
-                </div>
-                <div className="px-4 py-3 md:border-l-2 border-[#C8BA6A]" style={{ backgroundColor: CREAM }}>
-                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
-                </div>
-              </div>
-              <div className="flex items-center justify-center py-3 md:hidden" style={{ backgroundColor: CREAM }}>
-                <span className="text-2xl" style={{ color: GREEN }}>↓</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-16">
-            <p className="text-gray-500 text-sm mb-8">石神井川堆積土搬出工事</p>
-            <div className="rounded-2xl overflow-hidden shadow-sm grid grid-cols-1 md:grid-cols-2 md:items-stretch relative" style={{ border: `2px solid ${STRAW}` }}>
-              <div className="flex flex-col">
-                <img src="/ishikamigawa-before.jpg" alt="石神井川堆積土搬出工事 施工前" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
-                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
-                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
-                </div>
-              </div>
-              <svg className="absolute z-10 hidden md:block" style={{ left: "50%", top: "calc(50% - 22px)", transform: "translateX(-50%) translateY(-50%)", width: "80px", height: "40px", filter: "drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(2px 2px 0 rgba(0,0,0,0.9))" }} viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0" y1="20" x2="60" y2="20" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
-                <polygon points="56,6 80,20 56,34" fill={STRAW} />
-              </svg>
-              <div className="flex items-center justify-center py-3 md:hidden" style={{ backgroundColor: CREAM }}>
-                <span className="text-2xl" style={{ color: GREEN }}>↓</span>
-              </div>
-              <div className="flex flex-col border-t-2 border-[#C8BA6A] md:border-t-0 md:border-l-2 md:border-[#C8BA6A]">
-                <img src="/ishikamigawa-after.jpg" alt="石神井川堆積土搬出工事 施工後" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
-                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
-                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-16">
-            <p className="text-gray-500 text-sm mb-8">田端中学校新築グラウンド整備工事</p>
-            <div className="rounded-2xl overflow-hidden shadow-sm grid grid-cols-1 md:grid-cols-2 md:items-stretch relative" style={{ border: `2px solid ${STRAW}` }}>
-              <div className="flex flex-col">
-                <img src="/tabata-before.jpg" alt="田端中学校新築グラウンド整備工事 施工前" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
-                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
-                  <p style={{ color: GREEN }} className="text-sm font-bold">施工前</p>
-                </div>
-              </div>
-              <svg className="absolute z-10 hidden md:block" style={{ left: "50%", top: "calc(50% - 22px)", transform: "translateX(-50%) translateY(-50%)", width: "80px", height: "40px", filter: "drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(2px 2px 0 rgba(0,0,0,0.9))" }} viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0" y1="20" x2="60" y2="20" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
-                <polygon points="56,6 80,20 56,34" fill={STRAW} />
-              </svg>
-              <div className="flex items-center justify-center py-3 md:hidden" style={{ backgroundColor: CREAM }}>
-                <span className="text-2xl" style={{ color: GREEN }}>↓</span>
-              </div>
-              <div className="flex flex-col border-t-2 border-[#C8BA6A] md:border-t-0 md:border-l-2 md:border-[#C8BA6A]">
-                <img src="/tabata-after1.jpg" alt="田端中学校新築グラウンド整備工事 施工後" className="w-full object-cover flex-1" style={{ minHeight: "280px" }} />
-                <div className="px-4 py-3" style={{ backgroundColor: CREAM }}>
-                  <p style={{ color: GREEN }} className="text-sm font-bold">施工後</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

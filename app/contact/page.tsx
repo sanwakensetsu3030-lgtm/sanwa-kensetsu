@@ -32,8 +32,10 @@ export default function ContactPage() {
 
       <section className="py-16" style={{ backgroundColor: "#fafaf7" }}>
         <div className="max-w-4xl mx-auto px-4">
-          <p className="section-subtitle">Recruit</p>
-          <h2 className="section-title">採用情報</h2>
+          <div className="section-heading">
+            <p className="section-subtitle">Recruit</p>
+            <h2 className="section-title">採用情報</h2>
+          </div>
           <p className="text-gray-500 mt-2 mb-10">北区の道路・公園・河川を守る仲間を募集しています。未経験者歓迎・年齢不問。</p>
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             {[

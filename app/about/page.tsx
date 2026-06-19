@@ -47,8 +47,10 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="section-subtitle">Representative Message</p>
-            <h2 className="section-title">代表挨拶</h2>
+            <div className="section-heading">
+              <p className="section-subtitle">Representative Message</p>
+              <h2 className="section-title">代表挨拶</h2>
+            </div>
             <div className="text-gray-600 leading-relaxed space-y-4 mt-6">
               <p>三和建設株式会社は、昭和27年（1952年）の設立以来、東京都北区を拠点に道路・公園・河川・下水道などの社会インフラの維持管理・整備・補修を担ってまいりました。</p>
               <p>私たちが守るのは、地域の皆さまが毎日使う道路であり、お子さんが遊ぶ公園であり、暮らしを守る河川です。目立たない場所で支える仕事だからこそ、誠実に、丁寧に、現場と向き合い続けることを大切にしています。</p>
@@ -83,8 +85,10 @@ export default function AboutPage() {
 
       <section className="py-20" style={{ backgroundColor: "#fafaf7" }}>
         <div className="max-w-6xl mx-auto px-4">
-          <p className="section-subtitle">Team & Culture</p>
-          <h2 className="section-title">人とのつながりを、大切にする会社です。</h2>
+          <div className="section-heading">
+            <p className="section-subtitle">Team & Culture</p>
+            <h2 className="section-title">人とのつながりを、大切にする会社です。</h2>
+          </div>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: "🗣️", title: "風通しの良い職場環境", desc: "事務所では社長を含む全員が同じ空間で日々の業務にあたっており、気軽に意見を交わせる開かれた雰囲気があります。上下の距離が近いからこそ、働きやすさにつながっています。" },
@@ -103,8 +107,10 @@ export default function AboutPage() {
 
       <section className="py-20" style={{ backgroundColor: "#fafaf7" }}>
         <div className="max-w-6xl mx-auto px-4">
-          <p className="section-subtitle">Welfare</p>
-          <h2 className="section-title">福利厚生</h2>
+          <div className="section-heading">
+            <p className="section-subtitle">Welfare</p>
+            <h2 className="section-title">福利厚生</h2>
+          </div>
           <div className="mt-2 mb-10 max-w-2xl space-y-4 text-gray-500 leading-relaxed">
             <p>
               社員旅行には、社員・従業員だけでなく、日頃からお世話になっている協力会社の方々も一緒に参加しています。仕事を通じて築いたつながりをより深める場として、毎回大切にしている行事のひとつです。
@@ -133,8 +139,10 @@ export default function AboutPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <p className="section-subtitle">Company Profile</p>
-          <h2 className="section-title">会社情報</h2>
+          <div className="section-heading">
+            <p className="section-subtitle">Company Profile</p>
+            <h2 className="section-title">会社情報</h2>
+          </div>
           <div className="mt-8 divide-y divide-gray-200 border-t border-gray-200">
             {companyInfo.map((item) => (
               <div key={item.label} className="grid grid-cols-3 py-5 gap-4">
