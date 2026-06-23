@@ -160,10 +160,8 @@ export default function Home() {
       {/* 地域からの感謝 */}
       <section style={{ backgroundColor: CREAM }} className="py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="section-heading">
-            <p className="section-subtitle">Community</p>
-            <h2 className="section-title">地域の人々や子どもたちが、<br />感謝してくれる仕事。</h2>
-          </div>
+          <p className="section-subtitle">Community</p>
+          <h2 className="section-title">地域の人々や子どもたちが、<br />感謝してくれる仕事。</h2>
 
           <div className="mt-10 grid grid-cols-1 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-sm" style={{ borderTop: `4px solid ${STRAW}` }}>
