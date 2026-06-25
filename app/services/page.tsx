@@ -134,7 +134,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="overflow-x-auto shadow-sm" style={{ border: `2px solid ${GREEN}` }}>
-              <table className="w-full text-sm bg-white" style={{ borderCollapse: "collapse" }}>
+              <table className="w-full text-sm" style={{ borderCollapse: "collapse", backgroundColor: "transparent" }}>
                 <thead style={{ backgroundColor: GREEN }}>
                   <tr>
                     <th className="py-4 px-6 text-left font-bold text-white">発注者</th>
@@ -144,7 +144,7 @@ export default function ServicesPage() {
                 </thead>
                 <tbody className="divide-y divide-gray-100">
                   {achievements.map((a, i) => (
-                    <tr key={i} className="hover:bg-gray-50 transition-colors">
+                    <tr key={i} className="transition-colors" style={{ backgroundColor: "transparent" }}>
                       <td className="py-4 px-6 text-gray-700">{a.area}</td>
                       <td className="py-4 px-6 font-medium" style={{ color: GREEN }}>{a.type}</td>
                       <td className="py-4 px-6 text-gray-500">{a.scale}</td>
@@ -167,10 +167,10 @@ export default function ServicesPage() {
               {/* Mobile */}
               <div className="md:hidden relative">
                 <div className="relative">
-                  <img src="/hojo87-before1.jpg" alt="補助87号線街路築造工事 施工前①" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/hojo87-before1.jpg" alt="補助87号線街路築造工事 施工前①" className="block w-full object-cover" style={{ height: "280px" }} />
                 </div>
                 <div className="relative">
-                  <img src="/hojo87-before2.jpg" alt="補助87号線街路築造工事 施工前②" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/hojo87-before2.jpg" alt="補助87号線街路築造工事 施工前②" className="block w-full object-cover" style={{ height: "280px" }} />
                   <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
                 </div>
                 <div className="absolute left-0 right-0 z-10 flex justify-center items-center" style={{ top: "560px", transform: "translateY(-50%)", height: "60px" }}>
@@ -181,10 +181,10 @@ export default function ServicesPage() {
                   </svg>
                 </div>
                 <div className="relative">
-                  <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                  <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="block w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
                 </div>
                 <div className="relative">
-                  <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                  <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="block w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
                   <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
                 </div>
               </div>
@@ -193,19 +193,19 @@ export default function ServicesPage() {
                 <div className="grid grid-cols-2">
                   <div className="flex flex-col">
                     <div className="relative">
-                      <img src="/hojo87-before1.jpg" alt="補助87号線街路築造工事 施工前①" className="w-full object-cover" style={{ height: "280px" }} />
+                      <img src="/hojo87-before1.jpg" alt="補助87号線街路築造工事 施工前①" className="block w-full object-cover" style={{ height: "280px" }} />
                     </div>
                     <div className="relative">
-                      <img src="/hojo87-before2.jpg" alt="補助87号線街路築造工事 施工前②" className="w-full object-cover" style={{ height: "280px" }} />
+                      <img src="/hojo87-before2.jpg" alt="補助87号線街路築造工事 施工前②" className="block w-full object-cover" style={{ height: "280px" }} />
                       <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
                     </div>
                   </div>
                   <div className="flex flex-col border-l-2 border-[#C8BA6A]">
                     <div className="relative">
-                      <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                      <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="block w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
                     </div>
                     <div className="relative">
-                      <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                      <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="block w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
                       <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
                     </div>
                   </div>
@@ -223,7 +223,7 @@ export default function ServicesPage() {
               {/* Mobile */}
               <div className="md:hidden relative">
                 <div className="relative">
-                  <img src="/ukima-before3.jpg" alt="路面補修等工事 施工前" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/ukima-before3.jpg" alt="路面補修等工事 施工前" className="block w-full object-cover" style={{ height: "280px" }} />
                   <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
                 </div>
                 <div className="absolute left-0 right-0 z-10 flex justify-center items-center" style={{ top: "280px", transform: "translateY(-50%)", height: "60px" }}>
@@ -234,7 +234,7 @@ export default function ServicesPage() {
                   </svg>
                 </div>
                 <div className="relative">
-                  <img src="/ukima-after3.jpg" alt="路面補修等工事 施工後" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/ukima-after3.jpg" alt="路面補修等工事 施工後" className="block w-full object-cover" style={{ height: "280px" }} />
                   <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
                 </div>
               </div>
@@ -242,7 +242,7 @@ export default function ServicesPage() {
               <div className="hidden md:grid grid-cols-2 items-stretch relative">
                 <div className="flex flex-col">
                   <div className="relative flex-1">
-                    <img src="/ukima-before3.jpg" alt="路面補修等工事 施工前" className="w-full object-cover" style={{ minHeight: "280px" }} />
+                    <img src="/ukima-before3.jpg" alt="路面補修等工事 施工前" className="block w-full object-cover" style={{ height: "100%", minHeight: "280px" }} />
                     <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export default function ServicesPage() {
                 </svg>
                 <div className="flex flex-col border-l-2 border-[#C8BA6A]">
                   <div className="relative flex-1">
-                    <img src="/ukima-after3.jpg" alt="路面補修等工事 施工後" className="w-full object-cover" style={{ minHeight: "280px" }} />
+                    <img src="/ukima-after3.jpg" alt="路面補修等工事 施工後" className="block w-full object-cover" style={{ height: "100%", minHeight: "280px" }} />
                     <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
                   </div>
                 </div>
@@ -265,7 +265,7 @@ export default function ServicesPage() {
               {/* Mobile */}
               <div className="md:hidden relative">
                 <div className="relative">
-                  <img src="/ishikamigawa-before.jpg" alt="石神井川堆積土搬出工事 施工前" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/ishikamigawa-before.jpg" alt="石神井川堆積土搬出工事 施工前" className="block w-full object-cover" style={{ height: "280px" }} />
                   <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
                 </div>
                 <div className="absolute left-0 right-0 z-10 flex justify-center items-center" style={{ top: "280px", transform: "translateY(-50%)", height: "60px" }}>
@@ -276,7 +276,7 @@ export default function ServicesPage() {
                   </svg>
                 </div>
                 <div className="relative">
-                  <img src="/ishikamigawa-after.jpg" alt="石神井川堆積土搬出工事 施工後" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/ishikamigawa-after.jpg" alt="石神井川堆積土搬出工事 施工後" className="block w-full object-cover" style={{ height: "280px" }} />
                   <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
                 </div>
               </div>
@@ -284,7 +284,7 @@ export default function ServicesPage() {
               <div className="hidden md:grid grid-cols-2 items-stretch relative">
                 <div className="flex flex-col">
                   <div className="relative flex-1">
-                    <img src="/ishikamigawa-before.jpg" alt="石神井川堆積土搬出工事 施工前" className="w-full object-cover" style={{ minHeight: "280px" }} />
+                    <img src="/ishikamigawa-before.jpg" alt="石神井川堆積土搬出工事 施工前" className="block w-full object-cover" style={{ height: "100%", minHeight: "280px" }} />
                     <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
                   </div>
                 </div>
@@ -294,7 +294,7 @@ export default function ServicesPage() {
                 </svg>
                 <div className="flex flex-col border-l-2 border-[#C8BA6A]">
                   <div className="relative flex-1">
-                    <img src="/ishikamigawa-after.jpg" alt="石神井川堆積土搬出工事 施工後" className="w-full object-cover" style={{ minHeight: "280px" }} />
+                    <img src="/ishikamigawa-after.jpg" alt="石神井川堆積土搬出工事 施工後" className="block w-full object-cover" style={{ height: "100%", minHeight: "280px" }} />
                     <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
                   </div>
                 </div>
@@ -307,7 +307,7 @@ export default function ServicesPage() {
               {/* Mobile */}
               <div className="md:hidden relative">
                 <div className="relative">
-                  <img src="/tabata-before.jpg" alt="田端中学校新築グラウンド整備工事 施工前" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/tabata-before.jpg" alt="田端中学校新築グラウンド整備工事 施工前" className="block w-full object-cover" style={{ height: "280px" }} />
                   <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
                 </div>
                 <div className="absolute left-0 right-0 z-10 flex justify-center items-center" style={{ top: "280px", transform: "translateY(-50%)", height: "60px" }}>
@@ -318,7 +318,7 @@ export default function ServicesPage() {
                   </svg>
                 </div>
                 <div className="relative">
-                  <img src="/tabata-after1.jpg" alt="田端中学校新築グラウンド整備工事 施工後" className="w-full object-cover" style={{ height: "280px" }} />
+                  <img src="/tabata-after1.jpg" alt="田端中学校新築グラウンド整備工事 施工後" className="block w-full object-cover" style={{ height: "280px" }} />
                   <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
                 </div>
               </div>
@@ -326,7 +326,7 @@ export default function ServicesPage() {
               <div className="hidden md:grid grid-cols-2 items-stretch relative">
                 <div className="flex flex-col">
                   <div className="relative flex-1">
-                    <img src="/tabata-before.jpg" alt="田端中学校新築グラウンド整備工事 施工前" className="w-full object-cover" style={{ minHeight: "280px" }} />
+                    <img src="/tabata-before.jpg" alt="田端中学校新築グラウンド整備工事 施工前" className="block w-full object-cover" style={{ height: "100%", minHeight: "280px" }} />
                     <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
                   </div>
                 </div>
@@ -336,7 +336,7 @@ export default function ServicesPage() {
                 </svg>
                 <div className="flex flex-col border-l-2 border-[#C8BA6A]">
                   <div className="relative flex-1">
-                    <img src="/tabata-after1.jpg" alt="田端中学校新築グラウンド整備工事 施工後" className="w-full object-cover" style={{ minHeight: "280px" }} />
+                    <img src="/tabata-after1.jpg" alt="田端中学校新築グラウンド整備工事 施工後" className="block w-full object-cover" style={{ height: "100%", minHeight: "280px" }} />
                     <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
                   </div>
                 </div>
@@ -378,13 +378,13 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
-              <img src="/typhoon19-suibo.jpg" alt="台風19号に伴う水防作業" className="w-full object-cover" style={{ height: "320px" }} />
+              <img src="/typhoon19-suibo.jpg" alt="台風19号に伴う水防作業" className="block w-full object-cover" style={{ height: "320px" }} />
               <div className="px-4 py-3">
                 <p style={{ color: GREEN }} className="text-sm font-bold">台風19号 水防作業</p>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm bg-white">
-              <img src="/suibo-training1.jpg" alt="水防訓練" className="w-full object-cover" style={{ height: "320px" }} />
+              <img src="/suibo-training1.jpg" alt="水防訓練" className="block w-full object-cover" style={{ height: "320px" }} />
               <div className="px-4 py-3 flex items-baseline gap-3">
                 <p style={{ color: GREEN }} className="text-sm font-bold">水防訓練</p>
                 <p style={{ color: GREEN }} className="text-xs opacity-70">定期的に訓練をおこなっております</p>
@@ -392,7 +392,7 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="rounded-2xl shadow-sm bg-white overflow-hidden">
-            <div className="rounded-t-2xl overflow-hidden grid grid-cols-2" style={{ height: "320px", gap: "3px", backgroundColor: STRAW }}>
+            <div className="rounded-t-2xl overflow-hidden grid grid-cols-2" style={{ height: "320px", backgroundColor: STRAW }}>
               <img src="/arakawa-cleanup1.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
               <img src="/arakawa-cleanup2.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
             </div>

@@ -19,6 +19,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
+        {/* 透かし文字：画面右側に横向き固定表示、右端が見切れる */}
+        <div
+          style={{
+            position: "fixed",
+            top: "calc(50% + 38px)",
+            right: 0,
+            transform: "translateX(calc(50% - clamp(14px, 3vw, 36px))) translateY(-50%) rotate(-90deg)",
+            pointerEvents: "none",
+            zIndex: 1,
+            userSelect: "none",
+            whiteSpace: "nowrap",
+          }}
+        >
+          <p style={{
+            fontSize: "clamp(48px, 10vw, 120px)",
+            fontWeight: 900,
+            color: "#2D6A3F",
+            opacity: 0.07,
+            letterSpacing: "0.05em",
+            lineHeight: 1,
+            fontFamily: "'Noto Sans JP', sans-serif",
+          }}>三和建設株式会社</p>
+        </div>
       </body>
     </html>
   );
