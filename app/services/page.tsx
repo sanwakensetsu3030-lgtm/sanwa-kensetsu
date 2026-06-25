@@ -165,27 +165,44 @@ export default function ServicesPage() {
             <div className="inline-block px-4 py-1 text-sm font-bold rounded-tl-xl rounded-tr-xl relative z-10" style={{ border: `2px solid ${STRAW}`, borderBottom: "none", color: GREEN, backgroundColor: "white", marginBottom: "-2px" }}>補助87号線街路築造工事・交差点改良工事</div>
             <div className="rounded-b-2xl rounded-tr-2xl overflow-hidden shadow-sm" style={{ border: `2px solid ${STRAW}` }}>
               {/* Mobile */}
-              <div className="md:hidden relative">
+              <div className="md:hidden">
+                {/* セット1：施工前①→施工後① */}
                 <div className="relative">
-                  <img src="/hojo87-before1.jpg" alt="補助87号線街路築造工事 施工前①" className="block w-full object-cover" style={{ height: "280px" }} />
+                  <div className="relative">
+                    <img src="/hojo87-before1.jpg" alt="補助87号線街路築造工事 施工前①" className="block w-full object-cover" style={{ height: "280px" }} />
+                    <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
+                  </div>
+                  <div className="absolute left-0 right-0 z-10 flex justify-center items-center" style={{ top: "280px", transform: "translateY(-50%)", height: "60px" }}>
+                    <div className="absolute left-0 right-0" style={{ height: "2px", backgroundColor: STRAW }} />
+                    <svg style={{ width: "40px", height: "60px", position: "relative", zIndex: 1, filter: "drop-shadow(0 0 4px rgba(0,0,0,0.5))" }} viewBox="0 0 40 60" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="20" y1="0" x2="20" y2="42" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
+                      <polygon points="6,36 20,60 34,36" fill={STRAW} />
+                    </svg>
+                  </div>
+                  <div className="relative">
+                    <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="block w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                    <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
+                  </div>
                 </div>
+                {/* セット間の太い区切り線（2pxの4倍＝8px） */}
+                <div style={{ height: "8px", backgroundColor: STRAW }} />
+                {/* セット2：施工前②→施工後② */}
                 <div className="relative">
-                  <img src="/hojo87-before2.jpg" alt="補助87号線街路築造工事 施工前②" className="block w-full object-cover" style={{ height: "280px" }} />
-                  <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
-                </div>
-                <div className="absolute left-0 right-0 z-10 flex justify-center items-center" style={{ top: "560px", transform: "translateY(-50%)", height: "60px" }}>
-                  <div className="absolute left-0 right-0" style={{ height: "2px", backgroundColor: STRAW }} />
-                  <svg style={{ width: "40px", height: "60px", position: "relative", zIndex: 1, filter: "drop-shadow(0 0 4px rgba(0,0,0,0.5))" }} viewBox="0 0 40 60" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="20" y1="0" x2="20" y2="42" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
-                    <polygon points="6,36 20,60 34,36" fill={STRAW} />
-                  </svg>
-                </div>
-                <div className="relative">
-                  <img src="/hojo87-after1.jpg" alt="補助87号線街路築造工事 施工後①" className="block w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
-                </div>
-                <div className="relative">
-                  <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="block w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
-                  <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
+                  <div className="relative">
+                    <img src="/hojo87-before2.jpg" alt="補助87号線街路築造工事 施工前②" className="block w-full object-cover" style={{ height: "280px" }} />
+                    <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工前</span>
+                  </div>
+                  <div className="absolute left-0 right-0 z-10 flex justify-center items-center" style={{ top: "280px", transform: "translateY(-50%)", height: "60px" }}>
+                    <div className="absolute left-0 right-0" style={{ height: "2px", backgroundColor: STRAW }} />
+                    <svg style={{ width: "40px", height: "60px", position: "relative", zIndex: 1, filter: "drop-shadow(0 0 4px rgba(0,0,0,0.5))" }} viewBox="0 0 40 60" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="20" y1="0" x2="20" y2="42" stroke={STRAW} strokeWidth="7" strokeLinecap="round" />
+                      <polygon points="6,36 20,60 34,36" fill={STRAW} />
+                    </svg>
+                  </div>
+                  <div className="relative">
+                    <img src="/hojo87-after2.jpg" alt="補助87号線街路築造工事 施工後②" className="block w-full object-cover" style={{ height: "280px", filter: "brightness(1.3)" }} />
+                    <span className="absolute bottom-2 right-2 text-xs font-bold px-2 py-1" style={{ backgroundColor: GREEN, color: "white" }}>施工後</span>
+                  </div>
                 </div>
               </div>
               {/* Desktop */}
@@ -392,9 +409,9 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="rounded-2xl shadow-sm bg-white overflow-hidden">
-            <div className="rounded-t-2xl overflow-hidden grid grid-cols-2" style={{ height: "320px", backgroundColor: STRAW }}>
-              <img src="/arakawa-cleanup1.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
-              <img src="/arakawa-cleanup2.jpg" alt="荒川河川敷清掃作業" className="w-full h-full object-cover" />
+            <div className="rounded-t-2xl overflow-hidden md:grid md:grid-cols-2 flex flex-col" style={{ backgroundColor: STRAW }}>
+              <img src="/arakawa-cleanup1.jpg" alt="荒川河川敷清掃作業" className="block w-full object-cover md:h-80 h-64" />
+              <img src="/arakawa-cleanup2.jpg" alt="荒川河川敷清掃作業" className="block w-full object-cover md:h-80 h-64" />
             </div>
             <div className="px-4 py-3">
               <p style={{ color: GREEN }} className="text-sm font-bold">荒川河川敷 清掃作業</p>
