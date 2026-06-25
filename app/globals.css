@@ -15,6 +15,16 @@
 
 html { scroll-behavior: smooth; }
 
+/* 透かし文字サイズ：スマホは大きく、デスクトップは元のサイズ */
+.watermark-text {
+  font-size: 80px;
+}
+@media (min-width: 768px) {
+  .watermark-text {
+    font-size: clamp(80px, 10vw, 120px);
+  }
+}
+
 /* 写真・カード・帯を透かしより上のレイヤーに */
 main img,
 main video {

@@ -25,15 +25,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             position: "fixed",
             top: "calc(50% + 38px)",
             right: 0,
-            transform: "translateX(calc(50% - clamp(14px, 3vw, 36px))) translateY(-50%) rotate(-90deg)",
+            transform: "translateX(calc(50% - clamp(24px, 6.5vw, 36px))) translateY(-50%) rotate(-90deg)",
             pointerEvents: "none",
             zIndex: 1,
             userSelect: "none",
             whiteSpace: "nowrap",
           }}
         >
-          <p style={{
-            fontSize: "clamp(48px, 10vw, 120px)",
+          <p className="watermark-text" style={{
             fontWeight: 900,
             color: "#2D6A3F",
             opacity: 0.07,
