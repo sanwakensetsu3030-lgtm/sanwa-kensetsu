@@ -216,10 +216,10 @@ export default function Home() {
       <section style={{ backgroundColor: GREEN }} className="py-20 text-center text-white">
         <div className="max-w-2xl mx-auto px-4">
           <p style={{ color: STRAW }} className="font-bold tracking-widest text-sm mb-4 uppercase">Recruit</p>
-          <h2 className="text-3xl font-black mb-4">一緒に、北区を守りませんか。</h2>
+          <h2 className="text-3xl font-black mb-4">一緒に、<br className="md:hidden" />北区を守りませんか。</h2>
           <p className="text-gray-300 mb-8 leading-relaxed">
-            現場監督・作業員を募集しています。未経験者歓迎。<br />
-            家族のようなチームで、かっこいい仕事を一緒にしましょう。
+            <span className="md:hidden">現場監督・作業員を募集しています。<br />未経験者歓迎。<br />家族のようなチームで、<br />かっこいい仕事を一緒にしましょう。</span>
+            <span className="hidden md:inline">現場監督・作業員を募集しています。未経験者歓迎。<br />家族のようなチームで、かっこいい仕事を一緒にしましょう。</span>
           </p>
           <Link href="/contact" className="btn-straw">採用情報・お問い合わせ</Link>
         </div>
