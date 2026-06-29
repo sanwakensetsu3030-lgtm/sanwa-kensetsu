@@ -63,8 +63,8 @@ export default function AboutPage() {
           <div className="rounded-2xl p-10" style={{ backgroundColor: CREAM, borderLeft: `4px solid ${STRAW}` }}>
             <p style={{ color: "#A89840" }} className="font-bold tracking-widest text-xs mb-6 uppercase">Our Mission</p>
             <p style={{ color: GREEN }} className="text-2xl font-black leading-relaxed mb-6">
-              地域を守る。<br />人々の暮らしを守る。<br />
-              <span style={{ color: "#A89840" }}>かっこいい仕事を続ける。</span>
+              地域を守る。<br />人々の暮らしを守る。<br className="md:hidden" /><br className="hidden md:block" />
+              <span style={{ color: "#A89840" }}>かっこいい仕事を<br className="md:hidden" />続ける。</span>
             </p>
             <ul className="space-y-3 text-gray-600 text-sm">
               {[
@@ -87,7 +87,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="section-heading">
             <p className="section-subtitle">Team & Culture</p>
-            <h2 className="section-title">人とのつながりを、大切にする会社です。</h2>
+            <h2 className="section-title">人とのつながりを、<br className="md:hidden" />大切にする会社です。</h2>
           </div>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
