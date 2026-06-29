@@ -86,14 +86,6 @@ export default function Header() {
           >
             お問い合わせ・採用情報
           </Link>
-          <Link
-            href="/access"
-            className="block mt-2 text-white py-3 border-b text-sm font-medium hover:opacity-80"
-            style={{ borderColor: "#3D8A55" }}
-            onClick={() => setMenuOpen(false)}
-          >
-            アクセス
-          </Link>
         </div>
       )}
     </header>
