@@ -108,7 +108,7 @@ export default function Home() {
       {/* Services */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="section-title"><span style={{ fontSize: "1.3em" }}>【道路】</span>の<br className="md:hidden" />裏も表も守る。<br />それが<br className="md:hidden" />わたしたちの仕事。</h2>
+          <h2 className="section-title"><span style={{ fontSize: "1.3em" }}>【道路】</span>の<br className="md:hidden" />裏も表も守る。それが<br />わたしたちの仕事。</h2>
           <p className="text-gray-700 font-bold text-lg mt-4 mb-3 max-w-xl">地域インフラを守るプロフェッショナル</p>
           <p className="text-gray-500 text-sm leading-relaxed mb-12 max-w-xl">皆さんが日常的に使う道路の整備・補修など日々の管理から災害時の対応まで、<br />いつでも地域のインフラを支えています。<br />目に見える部分はもちろん見えない部分も丁寧に整え、<br />安心して暮らせる環境づくりに取り組んでいます。</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
