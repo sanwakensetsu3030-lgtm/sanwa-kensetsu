@@ -161,7 +161,7 @@ export default function Home() {
       <section style={{ backgroundColor: CREAM }} className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <p className="section-subtitle">Community</p>
-          <h2 className="section-title">地域の人々や子どもたちが、<br />感謝してくれる仕事。</h2>
+          <h2 className="section-title">地域の人々や<br className="md:hidden" />子どもたちが、<br />感謝してくれる仕事。</h2>
 
           <div className="mt-10 grid grid-cols-1 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-sm" style={{ borderTop: `4px solid ${STRAW}` }}>
