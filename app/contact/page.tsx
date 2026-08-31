@@ -111,6 +111,7 @@ export default function ContactPage() {
                 お問い合わせフォームを開く
               </a>
               <p className="text-gray-400 text-xs mt-6">※ 別タブで開きます</p>
+              <p className="text-gray-500 text-xs mt-3">※ お見積りやご紹介に関するお問い合わせはできかねます。</p>
             </div>
           </div>
         </div>
