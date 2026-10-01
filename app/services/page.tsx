@@ -46,6 +46,7 @@ const achievements = [
   { area: "東京都北区", type: "路面補修等工事・汚水桝等調整工事（北1293号：2工区）", scale: "2024.06〜2025.03" },
   { area: "東京都北区", type: "王子一丁目遊び場撤去工事", scale: "2024.10〜2024.12" },
   { area: "東京都北区", type: "路面補修等工事・汚水桝等調整工事（北1293号：3工区）", scale: "2025.07〜2025.11" },
+  { area: "東京都北区", type: "名主の滝公園整備工事", scale: "2025.07〜2026.08" },
 ];
 
 export default function ServicesPage() {
